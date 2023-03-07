@@ -4,6 +4,10 @@ import "./index.css";
 import App from "./App";
 import { I18nextProvider } from "react-i18next";
 import i18n from "./translation";
+import { BrowserRouter as Router } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import PageHero from "./components/PageHero";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -11,7 +15,12 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <I18nextProvider i18n={i18n}>
-      <App />
+      <Router>
+        <Navbar />
+        <PageHero />
+        <App />
+        <Footer />
+      </Router>
     </I18nextProvider>
   </React.StrictMode>
 );
