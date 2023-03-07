@@ -8,6 +8,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import PageHero from "./components/PageHero";
+import ScrollToTop from "./components/ScrollToTop";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -19,6 +20,7 @@ root.render(
         <Navbar />
         <PageHero />
         <App />
+        <ScrollToTop />
         <Footer />
       </Router>
     </I18nextProvider>
