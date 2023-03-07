@@ -9,7 +9,7 @@ const Navbar = ({ t }: any) => {
   return (
     <div>
       <span>{t("Home")}</span>
-      <span>{t("Contacts")}</span>
+      <span>{t("Contact")}</span>
       <button onClick={() => handleChange("en")}>Eng</button>
       <button onClick={() => handleChange("sr")}>Srb</button>
     </div>
