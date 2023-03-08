@@ -4,11 +4,22 @@ import i18next from "i18next";
 import { FaBars } from "react-icons/fa";
 import eng from "../assets/eng.png";
 import ser2 from "../assets/ser2.png";
+import { useSidebarContext } from "../context/SidebarContext";
+import { SidebarContextType } from "../context/SidebarContext";
 
 const Navbar = ({ t }: any) => {
   const handleChange = (language: string) => {
     i18next.changeLanguage(language);
   };
+
+  const {
+    sidebarStatus,
+    setSidebarStatus,
+    rotateMenuButton,
+    setRotateMenuButton,
+    setRotateSidebarButton,
+  } = useSidebarContext() as SidebarContextType;
+  console.log(sidebarStatus);
 
   return (
     <nav className="sticky top-0 flex items-between lg:items-center h-20 w-full bg-sky-800 bg-opacity-70 drop-shadow-2xl">
@@ -94,9 +105,13 @@ const Navbar = ({ t }: any) => {
             <button
               type="button"
               className="p-1 mr-4 lg:hidden"
-              // onClick={openSidebar}
+              onClick={() => {
+                setSidebarStatus("block");
+                setRotateMenuButton("animate-[spin_0.4s_1]");
+                setRotateSidebarButton("");
+              }}
             >
-              <FaBars className="fill-sky-900 h-8 w-8" />
+              <FaBars className={`fill-sky-900 h-8 w-8 ${rotateMenuButton}`} />
             </button>
           </div>
         </section>
