@@ -5,7 +5,7 @@ const PageHero = () => {
   return (
     <div className="relative h-96 mt-8 overflow-hidden bg-sky-900 bg-opacity-50">
       <div className="absolute z-30 flex w-full h-full">
-        <div className="relative z-30 w-4/6 md:w-3/6 lg:w-2/6 px-6 py-8 text-white md:py-10 md:w-1/2">
+        <div className="relative z-30 w-4/6 md:w-3/6 lg:w-2/6 px-6 py-4 text-white md:py-10 md:w-1/2">
           <h2 className="text-md md:text-lg lg:text-xl">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum,
             excepturi? Eligendi quibusdam provident atque commodi ipsum ex,

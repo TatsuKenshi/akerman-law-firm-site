@@ -22,7 +22,7 @@ const Navbar = ({ t }: any) => {
   console.log(sidebarStatus);
 
   return (
-    <nav className="sticky top-0 flex items-between lg:items-center h-20 w-full bg-sky-900 drop-shadow-2xl">
+    <nav className="z-50 sticky top-0 flex items-between lg:items-center h-24 w-full bg-sky-900 drop-shadow-2xl">
       {/* content main section */}
       <section className="hidden lg:flex text-white items-center h-full mx-auto">
         {/* logo div */}
@@ -34,31 +34,31 @@ const Navbar = ({ t }: any) => {
 
         {/* navlinks section */}
         <section className="flex h-full items-center">
-          <div className="w-24 group flex-col text-center my-auto">
+          <div className="w-32 group flex-col text-center my-auto">
             <div className="h-[2px] w-full bg-transparent group-hover:bg-white"></div>
             <div className="w-full py-2 px-auto">
               <NavLink to="/" className="hover:text-yellow-100">
-                <span className="text-md font bold">{t("Home")}</span>
+                <span className="text-xl font-bold">{t("Home")}</span>
               </NavLink>
             </div>
             <div className="h-[2px] w-full bg-transparent group-hover:bg-white"></div>
           </div>
 
-          <div className="w-24 group flex-col place-content-between text-center">
+          <div className="w-32 group flex-col place-content-between text-center">
             <div className="h-[2px] w-full bg-transparent group-hover:bg-white"></div>
             <div className="w-full py-2 px-auto">
               <NavLink to="/contact" className="hover:text-yellow-100">
-                <span className="text-md font bold">{t("Contact")}</span>
+                <span className="text-xl font-bold">{t("Contact")}</span>
               </NavLink>
             </div>
             <div className="h-[2px] w-full bg-transparent group-hover:bg-white"></div>
           </div>
 
-          <div className="w-24 group flex-col place-content-between text-center">
+          <div className="w-32 group flex-col place-content-between text-center">
             <div className="h-[2px] w-full bg-transparent group-hover:bg-white"></div>
             <div className="w-full py-2 px-auto">
               <NavLink to="/workareas" className="hover:text-yellow-100">
-                <span className="text-md font bold">{t("WorkAreas")}</span>
+                <span className="text-xl font-bold">{t("WorkAreas")}</span>
               </NavLink>
             </div>
             <div className="h-[2px] w-full bg-transparent group-hover:bg-white"></div>
@@ -91,7 +91,7 @@ const Navbar = ({ t }: any) => {
       {/* small screen content section */}
       {/*  */}
 
-      <section className="flex lg:hidden text-white items-center justify-between px-8 h-full w-full">
+      <section className="flex lg:hidden text-white items-center justify-between px-8 h-full w-full bg-sky-900">
         {/* logo div */}
         <div className="w-16 text-center">
           <NavLink to="/">

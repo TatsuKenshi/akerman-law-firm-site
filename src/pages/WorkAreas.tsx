@@ -5,16 +5,18 @@ import React from "react";
 
 const PageHero = React.lazy(() => import("../components/PageHero"));
 
-const WorkAreas = (t: any) => {
+const WorkAreas = ({ t }: any) => {
   return (
     <main>
       <PageHero />
 
-      <div className="flex">
-        {cardItems.map((item) => {
-          return <FlipCard key={item.id} {...item} />;
-        })}
-      </div>
+      <section className="pt-4 mt-8">
+        <div className="flex max-w-[1200px] mx-auto justify-evenly flex-wrap mt-4 px-8 pt-4">
+          {cardItems.map((item) => {
+            return <FlipCard key={item.id} {...item} />;
+          })}
+        </div>
+      </section>
     </main>
   );
 };

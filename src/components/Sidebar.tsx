@@ -28,7 +28,7 @@ const Sidebar = ({ t }: any) => {
       } ease-in-out duration-1000`}
     >
       {/* logo and toggle button section */}
-      <section className="flex justify-between items-center px-8 h-20 bg-sky-900">
+      <section className="flex justify-between items-center px-8 h-24 bg-sky-900">
         <div>
           <NavLink to="/">
             <span className="text-3xl font-bold">S. A.</span>
