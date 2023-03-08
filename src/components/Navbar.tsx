@@ -22,46 +22,46 @@ const Navbar = ({ t }: any) => {
   console.log(sidebarStatus);
 
   return (
-    <nav className="sticky top-0 flex items-between lg:items-center h-20 w-full bg-sky-800 bg-opacity-70 drop-shadow-2xl">
+    <nav className="sticky top-0 flex items-between lg:items-center h-20 w-full bg-sky-900 drop-shadow-2xl">
       {/* content main section */}
       <section className="hidden lg:flex text-white items-center h-full mx-auto">
         {/* logo div */}
-        <div className="w-12 mr-72 text-center">
+        <div className="w-16 mr-72 text-center">
           <NavLink to="/">
-            <span>S. A.</span>
+            <span className="text-3xl font-bold">S. A.</span>
           </NavLink>
         </div>
 
         {/* navlinks section */}
         <section className="flex h-full items-center">
           <div className="w-24 group flex-col text-center my-auto">
-            <div className="h-[2px] w-full bg-transparent group-hover:bg-sky-900"></div>
+            <div className="h-[2px] w-full bg-transparent group-hover:bg-white"></div>
             <div className="w-full py-2 px-auto">
               <NavLink to="/" className="hover:text-yellow-100">
                 <span>{t("Home")}</span>
               </NavLink>
             </div>
-            <div className="h-[2px] w-full bg-transparent group-hover:bg-sky-900"></div>
+            <div className="h-[2px] w-full bg-transparent group-hover:bg-white"></div>
           </div>
 
           <div className="w-24 group flex-col place-content-between text-center">
-            <div className="h-[2px] w-full bg-transparent group-hover:bg-sky-900"></div>
+            <div className="h-[2px] w-full bg-transparent group-hover:bg-white"></div>
             <div className="w-full py-2 px-auto">
               <NavLink to="/contact" className="hover:text-yellow-100">
                 <span>{t("Contact")}</span>
               </NavLink>
             </div>
-            <div className="h-[2px] w-full bg-transparent group-hover:bg-sky-900"></div>
+            <div className="h-[2px] w-full bg-transparent group-hover:bg-white"></div>
           </div>
 
           <div className="w-24 group flex-col place-content-between text-center">
-            <div className="h-[2px] w-full bg-transparent group-hover:bg-sky-900"></div>
+            <div className="h-[2px] w-full bg-transparent group-hover:bg-white"></div>
             <div className="w-full py-2 px-auto">
               <NavLink to="/workareas" className="hover:text-yellow-100">
                 <span>{t("WorkAreas")}</span>
               </NavLink>
             </div>
-            <div className="h-[2px] w-full bg-transparent group-hover:bg-sky-900"></div>
+            <div className="h-[2px] w-full bg-transparent group-hover:bg-white"></div>
           </div>
         </section>
 
@@ -93,9 +93,9 @@ const Navbar = ({ t }: any) => {
 
       <section className="flex lg:hidden text-white items-center justify-between px-16 h-full w-full">
         {/* logo div */}
-        <div className="w-12 text-center">
+        <div className="w-16 text-center">
           <NavLink to="/">
-            <span>S. A.</span>
+            <span className="text-3xl font-bold">S. A.</span>
           </NavLink>
         </div>
 
@@ -111,7 +111,7 @@ const Navbar = ({ t }: any) => {
                 setRotateSidebarButton("");
               }}
             >
-              <FaBars className={`fill-sky-900 h-8 w-8 ${rotateMenuButton}`} />
+              <FaBars className={`fill-white h-8 w-8 ${rotateMenuButton}`} />
             </button>
           </div>
         </section>

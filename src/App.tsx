@@ -7,6 +7,7 @@ const Contact = React.lazy(() => import("./pages/Contact"));
 const Error = React.lazy(() => import("./pages/Error"));
 
 function App() {
+  // add a useEffect to hide the sidebar when the screen size goes over 1024px
   return (
     <Routes>
       <Route
