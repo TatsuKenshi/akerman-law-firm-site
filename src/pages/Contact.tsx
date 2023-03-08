@@ -1,7 +1,13 @@
 import React from "react";
 
+const PageHero = React.lazy(() => import("../components/PageHero"));
+
 const Contact = () => {
-  return <div>Contact</div>;
+  return (
+    <main>
+      <PageHero />
+    </main>
+  );
 };
 
 export default Contact;

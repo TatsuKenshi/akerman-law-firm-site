@@ -38,7 +38,7 @@ const Navbar = ({ t }: any) => {
             <div className="h-[2px] w-full bg-transparent group-hover:bg-white"></div>
             <div className="w-full py-2 px-auto">
               <NavLink to="/" className="hover:text-yellow-100">
-                <span>{t("Home")}</span>
+                <span className="text-md font bold">{t("Home")}</span>
               </NavLink>
             </div>
             <div className="h-[2px] w-full bg-transparent group-hover:bg-white"></div>
@@ -48,7 +48,7 @@ const Navbar = ({ t }: any) => {
             <div className="h-[2px] w-full bg-transparent group-hover:bg-white"></div>
             <div className="w-full py-2 px-auto">
               <NavLink to="/contact" className="hover:text-yellow-100">
-                <span>{t("Contact")}</span>
+                <span className="text-md font bold">{t("Contact")}</span>
               </NavLink>
             </div>
             <div className="h-[2px] w-full bg-transparent group-hover:bg-white"></div>
@@ -58,7 +58,7 @@ const Navbar = ({ t }: any) => {
             <div className="h-[2px] w-full bg-transparent group-hover:bg-white"></div>
             <div className="w-full py-2 px-auto">
               <NavLink to="/workareas" className="hover:text-yellow-100">
-                <span>{t("WorkAreas")}</span>
+                <span className="text-md font bold">{t("WorkAreas")}</span>
               </NavLink>
             </div>
             <div className="h-[2px] w-full bg-transparent group-hover:bg-white"></div>
@@ -91,7 +91,7 @@ const Navbar = ({ t }: any) => {
       {/* small screen content section */}
       {/*  */}
 
-      <section className="flex lg:hidden text-white items-center justify-between px-16 h-full w-full">
+      <section className="flex lg:hidden text-white items-center justify-between px-8 h-full w-full">
         {/* logo div */}
         <div className="w-16 text-center">
           <NavLink to="/">

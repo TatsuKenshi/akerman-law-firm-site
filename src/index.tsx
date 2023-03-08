@@ -22,7 +22,6 @@ root.render(
         <Router>
           <Navbar />
           <Sidebar />
-          <PageHero />
           <App />
           <ScrollToTop />
           <Footer />
