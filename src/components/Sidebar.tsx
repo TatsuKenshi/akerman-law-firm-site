@@ -30,7 +30,14 @@ const Sidebar = ({ t }: any) => {
       {/* logo and toggle button section */}
       <section className="flex justify-between items-center px-8 h-24 bg-sky-900">
         <div>
-          <NavLink to="/">
+          <NavLink
+            to="/"
+            onClick={() => {
+              setSidebarStatus("hidden");
+              setRotateSidebarButton("animate-[spin_0.4s_1]");
+              setRotateMenuButton("");
+            }}
+          >
             <span className="text-3xl font-bold">S. A.</span>
           </NavLink>
         </div>
@@ -52,7 +59,15 @@ const Sidebar = ({ t }: any) => {
       {/* links section */}
       <section className="text-center text-2xl mt-24">
         <div className="w-full py-2 px-auto mt-8">
-          <NavLink to="/" className="hover:text-yellow-700 bg-opacity-80">
+          <NavLink
+            to="/"
+            className="hover:text-yellow-700 bg-opacity-80"
+            onClick={() => {
+              setSidebarStatus("hidden");
+              setRotateSidebarButton("animate-[spin_0.4s_1]");
+              setRotateMenuButton("");
+            }}
+          >
             <span className="text-xl font-bold">{t("Home")}</span>
           </NavLink>
         </div>
@@ -61,6 +76,11 @@ const Sidebar = ({ t }: any) => {
           <NavLink
             to="/contact"
             className="hover:text-yellow-700 bg-opacity-80"
+            onClick={() => {
+              setSidebarStatus("hidden");
+              setRotateSidebarButton("animate-[spin_0.4s_1]");
+              setRotateMenuButton("");
+            }}
           >
             <span className="text-xl font-bold">{t("Contact")}</span>
           </NavLink>
@@ -70,6 +90,11 @@ const Sidebar = ({ t }: any) => {
           <NavLink
             to="/workareas"
             className="hover:text-yellow-700 bg-opacity-80"
+            onClick={() => {
+              setSidebarStatus("hidden");
+              setRotateSidebarButton("animate-[spin_0.4s_1]");
+              setRotateMenuButton("");
+            }}
           >
             <span className="text-xl font-bold">{t("WorkAreas")}</span>
           </NavLink>
@@ -79,13 +104,29 @@ const Sidebar = ({ t }: any) => {
       {/* language buttons section */}
       <section className="flex justify-center">
         <div className="w-8 h-8 mr-6">
-          <button onClick={() => handleChange("en")} className="rounded-full">
+          <button
+            onClick={() => {
+              handleChange("en");
+              setSidebarStatus("hidden");
+              setRotateSidebarButton("animate-[spin_0.4s_1]");
+              setRotateMenuButton("");
+            }}
+            className="rounded-full"
+          >
             <img src={eng} alt="" />
           </button>
         </div>
 
         <div className="w-8 h-8 ml-6">
-          <button onClick={() => handleChange("sr")} className="rounded-full">
+          <button
+            onClick={() => {
+              handleChange("sr");
+              setSidebarStatus("hidden");
+              setRotateSidebarButton("animate-[spin_0.4s_1]");
+              setRotateMenuButton("");
+            }}
+            className="rounded-full"
+          >
             <img src={ser2} alt="" />
           </button>
         </div>
