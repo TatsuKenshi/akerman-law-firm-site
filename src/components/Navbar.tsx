@@ -35,33 +35,54 @@ const Navbar = ({ t }: any) => {
         {/* navlinks section */}
         <section className="flex h-full items-center">
           <div className="w-32 group flex-col text-center my-auto">
-            <div className="h-[2px] w-full bg-transparent group-hover:bg-white"></div>
+            <div className="h-[2px] w-full bg-transparent group-hover:bg-yellow-700 bg-opacity-80"></div>
             <div className="w-full py-2 px-auto">
-              <NavLink to="/" className="hover:text-yellow-100">
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-yellow-700 font-bold hover:text-yellow-700"
+                    : ""
+                }
+              >
                 <span className="text-xl font-bold">{t("Home")}</span>
               </NavLink>
             </div>
-            <div className="h-[2px] w-full bg-transparent group-hover:bg-white"></div>
+            <div className="h-[2px] w-full bg-transparent group-hover:bg-yellow-700 bg-opacity-80"></div>
           </div>
 
           <div className="w-32 group flex-col place-content-between text-center">
-            <div className="h-[2px] w-full bg-transparent group-hover:bg-white"></div>
+            <div className="h-[2px] w-full bg-transparent group-hover:bg-yellow-700 bg-opacity-80"></div>
             <div className="w-full py-2 px-auto">
-              <NavLink to="/contact" className="hover:text-yellow-100">
+              <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-yellow-700 font-bold hover:text-yellow-700"
+                    : ""
+                }
+              >
                 <span className="text-xl font-bold">{t("Contact")}</span>
               </NavLink>
             </div>
-            <div className="h-[2px] w-full bg-transparent group-hover:bg-white"></div>
+            <div className="h-[2px] w-full bg-transparent group-hover:bg-yellow-700 bg-opacity-80"></div>
           </div>
 
           <div className="w-32 group flex-col place-content-between text-center">
-            <div className="h-[2px] w-full bg-transparent group-hover:bg-white"></div>
+            <div className="h-[2px] w-full bg-transparent group-hover:bg-yellow-700 bg-opacity-80"></div>
             <div className="w-full py-2 px-auto">
-              <NavLink to="/workareas" className="hover:text-yellow-100">
+              <NavLink
+                to="/workareas"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-yellow-700 font-bold hover:text-yellow-700"
+                    : ""
+                }
+              >
                 <span className="text-xl font-bold">{t("WorkAreas")}</span>
               </NavLink>
             </div>
-            <div className="h-[2px] w-full bg-transparent group-hover:bg-white"></div>
+            <div className="h-[2px] w-full bg-transparent group-hover:bg-yellow-700 bg-opacity-80 "></div>
           </div>
         </section>
 

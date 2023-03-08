@@ -52,20 +52,26 @@ const Sidebar = ({ t }: any) => {
       {/* links section */}
       <section className="text-center text-2xl mt-24">
         <div className="w-full py-2 px-auto mt-8">
-          <NavLink to="/" className="hover:text-yellow-100">
-            <span>{t("Home")}</span>
+          <NavLink to="/" className="hover:text-yellow-700 bg-opacity-80">
+            <span className="text-xl font-bold">{t("Home")}</span>
           </NavLink>
         </div>
 
         <div className="w-full py-2 px-auto mt-8">
-          <NavLink to="/contact" className="hover:text-yellow-100">
-            <span>{t("Contact")}</span>
+          <NavLink
+            to="/contact"
+            className="hover:text-yellow-700 bg-opacity-80"
+          >
+            <span className="text-xl font-bold">{t("Contact")}</span>
           </NavLink>
         </div>
 
         <div className="w-full py-2 px-auto mt-8 mb-12">
-          <NavLink to="/workareas" className="hover:text-yellow-100">
-            <span>{t("WorkAreas")}</span>
+          <NavLink
+            to="/workareas"
+            className="hover:text-yellow-700 bg-opacity-80"
+          >
+            <span className="text-xl font-bold">{t("WorkAreas")}</span>
           </NavLink>
         </div>
       </section>

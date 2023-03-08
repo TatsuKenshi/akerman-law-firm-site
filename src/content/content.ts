@@ -1,10 +1,10 @@
-import { FaTrash, FaTimes, FaBeer } from "react-icons/fa";
+import { FaClock, FaTimes, FaBeer } from "react-icons/fa";
 import { CardItemType } from "./types";
 
 export const cardItems: CardItemType[] = [
   {
     id: 0,
-    icon: FaTrash,
+    icon: FaClock,
     engTitle: "card1",
     serTitle: "kartica1",
     engContent:
@@ -34,7 +34,7 @@ export const cardItems: CardItemType[] = [
   },
   {
     id: 3,
-    icon: FaTrash,
+    icon: FaClock,
     engTitle: "card1",
     serTitle: "kartica1",
     engContent:
