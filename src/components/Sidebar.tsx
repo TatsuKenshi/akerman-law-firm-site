@@ -19,7 +19,7 @@ const Sidebar = () => {
 
   return (
     <aside
-      className={`z-[100] h-full w-full bg-pink-500 absolute top-0 right-0 md:w-8/12 lg:hidden ${
+      className={`z-[100] h-full w-full bg-sky-800 bg-opacity-70 fixed top-0 right-0 md:w-8/12 lg:hidden ${
         sidebarStatus === "hidden" ? "translate-x-full" : "translate-x-0"
       } ease-in-out duration-1000`}
     >
