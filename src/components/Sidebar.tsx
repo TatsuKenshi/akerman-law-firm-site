@@ -23,7 +23,7 @@ const Sidebar = ({ t }: any) => {
 
   return (
     <aside
-      className={`z-[100] h-full w-full text-white bg-sky-800 bg-opacity-70 fixed top-0 right-0 sm:w-8/12 md:w-6/12 lg:hidden ${
+      className={`z-[100] h-full w-full text-white bg-sky-900 bg-opacity-90 fixed top-0 right-0 sm:w-8/12 md:w-6/12 lg:hidden ${
         sidebarStatus === "hidden" ? "translate-x-full" : "translate-x-0"
       } ease-in-out duration-1000`}
     >
@@ -61,7 +61,9 @@ const Sidebar = ({ t }: any) => {
         <div className="w-full py-2 px-auto mt-8">
           <NavLink
             to="/"
-            className="hover:text-yellow-700 bg-opacity-80"
+            className={({ isActive }) =>
+              isActive ? "text-yellow-700 font-bold hover:text-yellow-700" : ""
+            }
             onClick={() => {
               setSidebarStatus("hidden");
               setRotateSidebarButton("animate-[spin_0.4s_1]");
@@ -75,7 +77,9 @@ const Sidebar = ({ t }: any) => {
         <div className="w-full py-2 px-auto mt-8">
           <NavLink
             to="/contact"
-            className="hover:text-yellow-700 bg-opacity-80"
+            className={({ isActive }) =>
+              isActive ? "text-yellow-700 font-bold hover:text-yellow-700" : ""
+            }
             onClick={() => {
               setSidebarStatus("hidden");
               setRotateSidebarButton("animate-[spin_0.4s_1]");
@@ -89,7 +93,9 @@ const Sidebar = ({ t }: any) => {
         <div className="w-full py-2 px-auto mt-8 mb-12">
           <NavLink
             to="/workareas"
-            className="hover:text-yellow-700 bg-opacity-80"
+            className={({ isActive }) =>
+              isActive ? "text-yellow-700 font-bold hover:text-yellow-700" : ""
+            }
             onClick={() => {
               setSidebarStatus("hidden");
               setRotateSidebarButton("animate-[spin_0.4s_1]");

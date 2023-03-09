@@ -7,7 +7,13 @@ const Contact = React.lazy(() => import("./pages/Contact"));
 const Error = React.lazy(() => import("./pages/Error"));
 
 function App() {
-  // add a useEffect to hide the sidebar when the screen size goes over 1024px
+  // add a useEffect/custom hook which will switch page titles
+  // about page, with social links, company history, company info (address/google map, year of founding, etc)
+  // contacts page with email.js
+  // scroll to top section - email button, phone button, scroll back button
+  // footer
+  // error page with home page redirection
+
   return (
     <Routes>
       <Route
