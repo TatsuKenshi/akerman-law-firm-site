@@ -137,6 +137,8 @@ const Sidebar = ({ t }: any) => {
           </button>
         </div>
       </section>
+
+      {/* social links and contacts section */}
     </aside>
   );
 };

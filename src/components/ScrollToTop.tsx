@@ -1,13 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import {
-  FaChevronUp,
-  FaPhone,
-  FaEnvelope,
-  FaFacebook,
-  FaInstagram,
-  FaTwitter,
-} from "react-icons/fa";
+import { FaChevronUp, FaPhone, FaEnvelope } from "react-icons/fa";
 
 const ScrollToTop = () => {
   const [scrollToTopButton, setScrollToTopButton] =

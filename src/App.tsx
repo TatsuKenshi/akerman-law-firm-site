@@ -10,9 +10,8 @@ function App() {
   // add a useEffect/custom hook which will switch page titles
   // about page, with social links, company history, company info (address/google map, year of founding, etc)
   // contacts page with email.js
-  // scroll to top section - email button, phone button, scroll back button
-  // footer
   // error page with home page redirection
+  // add social links to the sidebar
 
   return (
     <Routes>

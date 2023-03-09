@@ -1,6 +1,8 @@
 import { FaClock, FaTimes, FaBeer } from "react-icons/fa";
 import { CardItemType, MemberType } from "./types";
 import eng from "../assets/eng.png";
+import femaleEmployeeStock1 from "../assets/femaleEmployeeStock1.jpg";
+import maleEmployeeStock1 from "../assets/maleEmployeeStock1.jpg";
 
 export const cardItems: CardItemType[] = [
   {
@@ -95,7 +97,7 @@ export const members: MemberType[] = [
       "Sara Akerman is the owner and the CEO of our firm. She is the most experienced of our lawyers. Areas of expertise include criminal law and property law.",
     serContent:
       "Sara Akerman je vlasnica i CEO firme. Najiskusnija je medju nasim advokatima. Oblasti ekspertize ukljucuju kriminalno i svojinsko pravo.",
-    image: eng,
+    image: femaleEmployeeStock1,
   },
   {
     id: 1,
@@ -106,7 +108,7 @@ export const members: MemberType[] = [
       "Sara Akerman is the owner and the CEO of our firm. She is the most experienced of our lawyers. Areas of expertise include criminal law and property law.",
     serContent:
       "Sara Akerman je vlasnica i CEO firme. Najiskusnija je medju nasim advokatima. Oblasti ekspertize ukljucuju kriminalno i svojinsko pravo.",
-    image: eng,
+    image: maleEmployeeStock1,
   },
   {
     id: 2,
@@ -117,7 +119,7 @@ export const members: MemberType[] = [
       "Sara Akerman is the owner and the CEO of our firm. She is the most experienced of our lawyers. Areas of expertise include criminal law and property law.",
     serContent:
       "Sara Akerman je vlasnica i CEO firme. Najiskusnija je medju nasim advokatima. Oblasti ekspertize ukljucuju kriminalno i svojinsko pravo.",
-    image: eng,
+    image: femaleEmployeeStock1,
   },
   {
     id: 3,
@@ -128,7 +130,7 @@ export const members: MemberType[] = [
       "Sara Akerman is the owner and the CEO of our firm. She is the most experienced of our lawyers. Areas of expertise include criminal law and property law.",
     serContent:
       "Sara Akerman je vlasnica i CEO firme. Najiskusnija je medju nasim advokatima. Oblasti ekspertize ukljucuju kriminalno i svojinsko pravo.",
-    image: eng,
+    image: femaleEmployeeStock1,
   },
   {
     id: 4,
@@ -139,7 +141,7 @@ export const members: MemberType[] = [
       "Sara Akerman is the owner and the CEO of our firm. She is the most experienced of our lawyers. Areas of expertise include criminal law and property law.",
     serContent:
       "Sara Akerman je vlasnica i CEO firme. Najiskusnija je medju nasim advokatima. Oblasti ekspertize ukljucuju kriminalno i svojinsko pravo.",
-    image: eng,
+    image: maleEmployeeStock1,
   },
   {
     id: 5,
@@ -150,7 +152,7 @@ export const members: MemberType[] = [
       "Sara Akerman is the owner and the CEO of our firm. She is the most experienced of our lawyers. Areas of expertise include criminal law and property law.",
     serContent:
       "Sara Akerman je vlasnica i CEO firme. Najiskusnija je medju nasim advokatima. Oblasti ekspertize ukljucuju kriminalno i svojinsko pravo.",
-    image: eng,
+    image: maleEmployeeStock1,
   },
 ];
 
