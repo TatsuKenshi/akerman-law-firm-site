@@ -27,7 +27,7 @@ const Footer = () => {
             Telefon: <br /> (+381)64/123-45-67
           </p>
           <p>
-            Email adresa: <br /> www.sarakerman@gmail.com
+            Email adresa: <br /> www.saraakerman@gmail.com
           </p>
           <p>
             Nadjite nas na: <br />{" "}
