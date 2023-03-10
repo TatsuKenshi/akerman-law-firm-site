@@ -6,6 +6,7 @@ import eng from "../assets/eng.png";
 import ser2 from "../assets/ser2.png";
 import { useSidebarContext } from "../context/SidebarContext";
 import { SidebarContextType } from "../context/SidebarContext";
+import logoTransparentan from "../assets/logoTransparentan.jpg";
 
 const Sidebar = ({ t }: any) => {
   const {
@@ -38,7 +39,13 @@ const Sidebar = ({ t }: any) => {
               setRotateMenuButton("");
             }}
           >
-            <span className="text-3xl font-bold">S. A.</span>
+            <span className="text-3xl font-bold">
+              <img
+                src={logoTransparentan}
+                className="w-12 h-12 rounded-full"
+                alt="company logo"
+              />
+            </span>
           </NavLink>
         </div>
         <div>
