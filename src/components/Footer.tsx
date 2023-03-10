@@ -33,13 +33,19 @@ const Footer = () => {
             Nadjite nas na: <br />{" "}
             <span className="flex">
               <span className="mr-8">
-                <FaFacebook />
+                <Link to="https://www.facebook.com">
+                  <FaFacebook />
+                </Link>
               </span>
               <span className="mr-8">
-                <FaInstagram />
+                <Link to="https://www.instagram.com">
+                  <FaInstagram />
+                </Link>
               </span>
               <span>
-                <FaTwitter />
+                <Link to="https://www.twitter.com">
+                  <FaTwitter />
+                </Link>
               </span>
             </span>
           </p>

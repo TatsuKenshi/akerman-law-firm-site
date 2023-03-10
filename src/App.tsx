@@ -9,7 +9,7 @@ const Error = React.lazy(() => import("./pages/Error"));
 function App() {
   // add a useEffect/custom hook which will switch page titles
   // about page, with social links, company history, company info (address/google map, year of founding, etc)
-  // contacts page with email.js
+  // finish contacts page with email.js
   // error page with home page redirection
   // add social links to the sidebar
 
