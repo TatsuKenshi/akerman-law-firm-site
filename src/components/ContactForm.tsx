@@ -3,15 +3,16 @@ import emailjs from "@emailjs/browser";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import i18next from "i18next";
 
 const ContactForm = () => {
   const form: any = useRef();
   const [messageSent, setMessageSent] = useState<string>("");
   const navigate = useNavigate();
+  const language = i18next.language;
 
   const {
     register,
-    handleSubmit,
     formState: { errors, isValid },
   } = useForm({
     mode: "onChange",
@@ -50,9 +51,13 @@ const ContactForm = () => {
         onSubmit={(e) => {
           sendEmail(e);
 
-          setMessageSent(
-            "Your message has been sent. You will be redirected to the home page shortly."
-          );
+          setMessageSent(`
+            ${
+              language === "en"
+                ? "Your message has been sent. You will be redirected to the home page shortly."
+                : "Vaša poruka je poslata. Ubrzo ćete biti prebačeni na naslovnu stranu."
+            }
+          `);
 
           setTimeout(() => {
             setMessageSent("");
@@ -67,14 +72,25 @@ const ContactForm = () => {
               htmlFor="user_name"
               className="text-xl font-bold text-sky-900"
             >
-              Your Name
+              {language === "en" ? "Your full name" : "Vaše ime i prezime"}
             </label>
           </div>
           <div>
             <input
               {...register("user_name", {
-                required: "This field is required",
-                minLength: { value: 4, message: "The name is too short" },
+                required: `${
+                  language === "en"
+                    ? "This field is required."
+                    : "Ime je obavezno polje."
+                }`,
+                minLength: {
+                  value: 4,
+                  message: `${
+                    language === "en"
+                      ? "The name is too short."
+                      : "Ime je prekratko."
+                  }`,
+                },
               })}
               id="user_name"
               name="user_name"
@@ -94,7 +110,7 @@ const ContactForm = () => {
               htmlFor="user_email"
               className="text-xl font-bold text-sky-900"
             >
-              Email
+              {language === "en" ? "Your email address" : "Vaša imejl adresa"}
             </label>
           </div>
           <div>
@@ -102,10 +118,18 @@ const ContactForm = () => {
               type="email"
               id="user_email"
               {...register("user_email", {
-                required: "Email Address is required",
+                required: `${
+                  language === "en"
+                    ? "Email address is required."
+                    : "Imejl adresa je obavezno polje."
+                }`,
                 pattern: {
                   value: /\S+@\S+\.\S+/,
-                  message: "Entered value does not match email format",
+                  message: `${
+                    language === "en"
+                      ? "Entered value does not match the email format."
+                      : "Unesena vrednost nije u validnom imejl formatu."
+                  }`,
                 },
               })}
               aria-invalid={errors.user_email ? "true" : "false"}
@@ -123,7 +147,7 @@ const ContactForm = () => {
         <div className="mb-4 w-full sm:w-10/12 md:w-8/12 mx-auto">
           <div>
             <label htmlFor="message" className="text-xl font-bold text-sky-900">
-              Your Message
+              {language === "en" ? "Your message" : "Vaša poruka"}
             </label>
           </div>
           <div>
@@ -131,14 +155,26 @@ const ContactForm = () => {
               rows={4}
               cols={50}
               {...register("message", {
-                required: "This field is required",
-                minLength: { value: 4, message: "The message is too short" },
+                required: `${
+                  language === "en"
+                    ? "Message field is required."
+                    : "Poruka je obavezno polje."
+                }`,
+                minLength: {
+                  value: 4,
+                  message: `${
+                    language === "en"
+                      ? "The message is too short."
+                      : "Poruka je prekratka."
+                  }`,
+                },
               })}
               id="message"
               className="border-4 border-sky-900 w-full h-40 h-12 rounded-lg px-2 text-xl"
               name="message"
             />
           </div>
+          {/* error message paragraph */}
           <p role="alert" className="text-xl font-bold text-sky-900">
             {errors?.message?.message}
           </p>
@@ -146,11 +182,13 @@ const ContactForm = () => {
 
         {/* submit button section */}
         <div className="mb-4 w-full sm:w-10/12 md:w-8/12 mx-auto">
-          <input
+          <button
             type="submit"
             className="border-4 border-sky-900 text-sky-900 font-bold rounded-lg px-2 text-xl w-full lg:w-min"
             disabled={!isValid}
-          />
+          >
+            {language === "en" ? "Send" : "Pošalji"}
+          </button>
         </div>
 
         {/* message sent section */}
