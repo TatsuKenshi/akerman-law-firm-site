@@ -1,36 +1,43 @@
 import { Link } from "react-router-dom";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { withTranslation } from "react-i18next";
 
-const Footer = () => {
+const Footer = ({ t }: any) => {
   return (
     <footer className="p-8 bg-sky-900 text-white">
       {/* content section */}
       <section className="max-w-[1200px] mx-auto h-full flex flex-wrap">
         <div className="w-full md:w-1/2 lg:w-1/4 mb-12 md:mb-8">
-          <h4>Advokat Sara Akerman</h4>
+          <h4>{t("FooterName")}</h4>
           <div className="h-[4px] w-full md:w-11/12 max-w-[1200px] bg-yellow-700 bg-opacity-70 my-2"></div>
         </div>
         <div className="w-full md:w-1/2 lg:w-1/4 mb-12 md:mb-8">
-          <h4>O Nama</h4>
+          <h4>{t("FooterAbout")}</h4>
           <div className="h-[4px] w-full md:w-11/12 max-w-[1200px] bg-yellow-700 bg-opacity-70 my-2"></div>
           <p>
-            Sediste Kancelarije: <br /> Ruzveltova 10, 11000 Beograd
+            {t("FooterCompanySeat")} <br /> {t("FooterCompanyAddress")}
           </p>
           <p>
-            Radno Vreme: <br /> Ponedeljak - Petak 09h-17h
+            {t("FooterHours")}
+            <br />
+            {t("FooterHoursDisplay")}
           </p>
         </div>
         <div className="w-full md:w-1/2 lg:w-1/4 mb-12 md:mb-8">
-          <h4>Kontakt</h4>
+          <h4>{t("FooterContact")}</h4>
           <div className="h-[4px] w-full md:w-11/12 max-w-[1200px] bg-yellow-700 bg-opacity-70 my-2"></div>
           <p>
-            Telefon: <br /> (+381)64/123-45-67
+            {t("FooterContactPhone")} <br />
+            {t("FooterContactPhoneDisplay")}
           </p>
           <p>
-            Email adresa: <br /> www.saraakerman@gmail.com
+            {t("FooterContactEmail")}
+            <br />
+            {t("FooterContactEmailDisplay")}
           </p>
           <p>
-            Nadjite nas na: <br />{" "}
+            {t("FooterContactSocial")}
+            <br />{" "}
             <span className="flex">
               <span className="mr-8">
                 <Link to="https://www.facebook.com">
@@ -54,13 +61,13 @@ const Footer = () => {
           <h4>Linkovi</h4>
           <div className="h-[4px] w-full md:w-11/12 max-w-[1200px] bg-yellow-700 bg-opacity-70 my-2"></div>
           <p>
-            <Link to="/">Home</Link>
+            <Link to="/">{t("Home")}</Link>
           </p>
           <p>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact">{t("Contact")}</Link>
           </p>
           <p>
-            <Link to="/workareas">Work Areas</Link>
+            <Link to="/workareas">{t("WorkAreas")}</Link>
           </p>
         </div>
         <div className="h-[4px] w-full max-w-[1200px] bg-yellow-700 bg-opacity-70 mx-auto my-2"></div>
@@ -78,4 +85,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default withTranslation()(Footer);
