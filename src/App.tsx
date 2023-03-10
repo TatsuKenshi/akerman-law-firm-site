@@ -9,7 +9,7 @@ const Error = React.lazy(() => import("./pages/Error"));
 function App() {
   // add a useEffect/custom hook which will switch page titles
   // favicon
-  // error page with home page redirection
+  // error page localization
 
   return (
     <Routes>
