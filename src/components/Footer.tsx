@@ -8,11 +8,11 @@ const Footer = () => {
       <section className="max-w-[1200px] mx-auto h-full flex flex-wrap">
         <div className="w-full md:w-1/2 lg:w-1/4 mb-12 md:mb-8">
           <h4>Advokat Sara Akerman</h4>
-          <div className="h-[4px] w-11/12 max-w-[1200px] bg-yellow-700 bg-opacity-70 my-2"></div>
+          <div className="h-[4px] w-full md:w-11/12 max-w-[1200px] bg-yellow-700 bg-opacity-70 my-2"></div>
         </div>
         <div className="w-full md:w-1/2 lg:w-1/4 mb-12 md:mb-8">
           <h4>O Nama</h4>
-          <div className="h-[4px] w-11/12 max-w-[1200px] bg-yellow-700 bg-opacity-70 my-2"></div>
+          <div className="h-[4px] w-full md:w-11/12 max-w-[1200px] bg-yellow-700 bg-opacity-70 my-2"></div>
           <p>
             Sediste Kancelarije: <br /> Ruzveltova 10, 11000 Beograd
           </p>
@@ -22,7 +22,7 @@ const Footer = () => {
         </div>
         <div className="w-full md:w-1/2 lg:w-1/4 mb-12 md:mb-8">
           <h4>Kontakt</h4>
-          <div className="h-[4px] w-11/12 max-w-[1200px] bg-yellow-700 bg-opacity-70 my-2"></div>
+          <div className="h-[4px] w-full md:w-11/12 max-w-[1200px] bg-yellow-700 bg-opacity-70 my-2"></div>
           <p>
             Telefon: <br /> (+381)64/123-45-67
           </p>
@@ -46,7 +46,7 @@ const Footer = () => {
         </div>
         <div className="w-full md:w-1/2 lg:w-1/4 mb-12 md:mb-8">
           <h4>Linkovi</h4>
-          <div className="h-[4px] w-11/12 max-w-[1200px] bg-yellow-700 bg-opacity-70 my-2"></div>
+          <div className="h-[4px] w-full md:w-11/12 max-w-[1200px] bg-yellow-700 bg-opacity-70 my-2"></div>
           <p>
             <Link to="/">Home</Link>
           </p>
@@ -57,7 +57,7 @@ const Footer = () => {
             <Link to="/workareas">Work Areas</Link>
           </p>
         </div>
-        <div className="h-[4px] w-11/12 max-w-[1200px] bg-yellow-700 bg-opacity-70 mx-auto my-2"></div>
+        <div className="h-[4px] w-full max-w-[1200px] bg-yellow-700 bg-opacity-70 mx-auto my-2"></div>
       </section>
 
       {/* copyright section */}

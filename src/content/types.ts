@@ -16,5 +16,5 @@ export type MemberType = {
   serRole: string;
   engContent: string;
   serContent: string;
-  image: any;
+  image: string;
 };
