@@ -1,6 +1,5 @@
 import { FaClock, FaTimes, FaBeer } from "react-icons/fa";
 import { CardItemType, MemberType } from "./types";
-import eng from "../assets/eng.png";
 import femaleEmployeeStock1 from "../assets/femaleEmployeeStock1.jpg";
 import maleEmployeeStock1 from "../assets/maleEmployeeStock1.jpg";
 
@@ -84,75 +83,6 @@ export const cardItems: CardItemType[] = [
       "This is card number 3. It is a mockup for the area of work card 3, which will replace it at some point. End of the description",
     serContent:
       "Ovo je kartica broj 3. Ovakva kartica je mokap za oblast rada karticu 3, koja ce je i zameniti. Kraj opisa.",
-  },
-];
-
-export const members: MemberType[] = [
-  {
-    id: 0,
-    name: "Sara Akerman",
-    engRole: "CEO",
-    serRole: "CEO",
-    engContent:
-      "Sara Akerman is the owner and the CEO of our firm. She is the most experienced of our lawyers. Areas of expertise include criminal law and property law.",
-    serContent:
-      "Sara Akerman je vlasnica i CEO firme. Najiskusnija je medju nasim advokatima. Oblasti ekspertize ukljucuju kriminalno i svojinsko pravo.",
-    image: femaleEmployeeStock1,
-  },
-  {
-    id: 1,
-    name: "Sara Akerman",
-    engRole: "CEO",
-    serRole: "CEO",
-    engContent:
-      "Sara Akerman is the owner and the CEO of our firm. She is the most experienced of our lawyers. Areas of expertise include criminal law and property law.",
-    serContent:
-      "Sara Akerman je vlasnica i CEO firme. Najiskusnija je medju nasim advokatima. Oblasti ekspertize ukljucuju kriminalno i svojinsko pravo.",
-    image: maleEmployeeStock1,
-  },
-  {
-    id: 2,
-    name: "Sara Akerman",
-    engRole: "CEO",
-    serRole: "CEO",
-    engContent:
-      "Sara Akerman is the owner and the CEO of our firm. She is the most experienced of our lawyers. Areas of expertise include criminal law and property law.",
-    serContent:
-      "Sara Akerman je vlasnica i CEO firme. Najiskusnija je medju nasim advokatima. Oblasti ekspertize ukljucuju kriminalno i svojinsko pravo.",
-    image: femaleEmployeeStock1,
-  },
-  {
-    id: 3,
-    name: "Sara Akerman",
-    engRole: "CEO",
-    serRole: "CEO",
-    engContent:
-      "Sara Akerman is the owner and the CEO of our firm. She is the most experienced of our lawyers. Areas of expertise include criminal law and property law.",
-    serContent:
-      "Sara Akerman je vlasnica i CEO firme. Najiskusnija je medju nasim advokatima. Oblasti ekspertize ukljucuju kriminalno i svojinsko pravo.",
-    image: femaleEmployeeStock1,
-  },
-  {
-    id: 4,
-    name: "Sara Akerman",
-    engRole: "CEO",
-    serRole: "CEO",
-    engContent:
-      "Sara Akerman is the owner and the CEO of our firm. She is the most experienced of our lawyers. Areas of expertise include criminal law and property law.",
-    serContent:
-      "Sara Akerman je vlasnica i CEO firme. Najiskusnija je medju nasim advokatima. Oblasti ekspertize ukljucuju kriminalno i svojinsko pravo.",
-    image: maleEmployeeStock1,
-  },
-  {
-    id: 5,
-    name: "Sara Akerman",
-    engRole: "CEO",
-    serRole: "CEO",
-    engContent:
-      "Sara Akerman is the owner and the CEO of our firm. She is the most experienced of our lawyers. Areas of expertise include criminal law and property law.",
-    serContent:
-      "Sara Akerman je vlasnica i CEO firme. Najiskusnija je medju nasim advokatima. Oblasti ekspertize ukljucuju kriminalno i svojinsko pravo.",
-    image: maleEmployeeStock1,
   },
 ];
 

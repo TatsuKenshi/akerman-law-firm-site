@@ -12,7 +12,6 @@ const Sidebar = ({ t }: any) => {
   const {
     sidebarStatus,
     setSidebarStatus,
-    rotateMenuButton,
     setRotateMenuButton,
     rotateSidebarButton,
     setRotateSidebarButton,
