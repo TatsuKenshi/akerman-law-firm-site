@@ -10,6 +10,11 @@ function App() {
   // add a useEffect/custom hook which will switch page titles
   // favicon
   // error page localization
+  // pageHero banner localization
+  // about section localization
+  // FAQ section ?
+  // meet our team scratch that
+  // izbaci "nase" iz oblasti rada nase kancelarije
 
   return (
     <Routes>
