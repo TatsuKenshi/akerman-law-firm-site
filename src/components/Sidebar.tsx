@@ -1,7 +1,7 @@
 import { NavLink, Link } from "react-router-dom";
 import { withTranslation } from "react-i18next";
 import i18next from "i18next";
-import { FaTimes, FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaTimes, FaLinkedin } from "react-icons/fa";
 import eng from "../assets/eng.png";
 import ser2 from "../assets/ser2.png";
 import { useSidebarContext } from "../context/SidebarContext";
@@ -149,18 +149,8 @@ const Sidebar = ({ t }: any) => {
       <div className="flex justify-center mt-12">
         <span className="flex">
           <span className="mr-8">
-            <Link to="https://www.facebook.com">
-              <FaFacebook className="w-8 h-8" />
-            </Link>
-          </span>
-          <span className="mr-8">
-            <Link to="https://www.instagram.com">
-              <FaInstagram className="w-8 h-8" />
-            </Link>
-          </span>
-          <span>
-            <Link to="https://www.twitter.com">
-              <FaTwitter className="w-8 h-8" />
+            <Link to="https://www.linkedin.com">
+              <FaLinkedin className="w-8 h-8" />
             </Link>
           </span>
         </span>

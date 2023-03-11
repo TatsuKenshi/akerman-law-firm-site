@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 import { withTranslation } from "react-i18next";
 
 const Footer = ({ t }: any) => {
@@ -40,18 +40,8 @@ const Footer = ({ t }: any) => {
             <br />{" "}
             <span className="flex">
               <span className="mr-8">
-                <Link to="https://www.facebook.com">
-                  <FaFacebook />
-                </Link>
-              </span>
-              <span className="mr-8">
-                <Link to="https://www.instagram.com">
-                  <FaInstagram />
-                </Link>
-              </span>
-              <span>
-                <Link to="https://www.twitter.com">
-                  <FaTwitter />
+                <Link to="https://www.linkedin.com">
+                  <FaLinkedin />
                 </Link>
               </span>
             </span>

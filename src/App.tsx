@@ -12,9 +12,6 @@ function App() {
   // error page localization
   // pageHero banner localization
   // about section localization
-  // FAQ section ?
-  // meet our team scratch that
-  // izbaci "nase" iz oblasti rada nase kancelarije
 
   return (
     <Routes>
