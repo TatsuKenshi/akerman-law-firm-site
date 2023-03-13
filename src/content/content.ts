@@ -1,7 +1,5 @@
 import { FaClock, FaTimes, FaBeer } from "react-icons/fa";
-import { CardItemType, MemberType } from "./types";
-import femaleEmployeeStock1 from "../assets/femaleEmployeeStock1.jpg";
-import maleEmployeeStock1 from "../assets/maleEmployeeStock1.jpg";
+import { CardItemType } from "./types";
 
 export const cardItems: CardItemType[] = [
   {

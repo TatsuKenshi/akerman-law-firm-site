@@ -82,6 +82,22 @@ const Sidebar = ({ t }: any) => {
 
         <div className="w-full py-2 px-auto mt-8">
           <NavLink
+            to="/services"
+            className={({ isActive }) =>
+              isActive ? "text-yellow-700 font-bold hover:text-yellow-700" : ""
+            }
+            onClick={() => {
+              setSidebarStatus("hidden");
+              setRotateSidebarButton("animate-[spin_0.4s_1]");
+              setRotateMenuButton("");
+            }}
+          >
+            <span className="text-xl font-bold">{t("Services")}</span>
+          </NavLink>
+        </div>
+
+        <div className="w-full py-2 px-auto mt-8 mb-12">
+          <NavLink
             to="/contact"
             className={({ isActive }) =>
               isActive ? "text-yellow-700 font-bold hover:text-yellow-700" : ""
@@ -93,22 +109,6 @@ const Sidebar = ({ t }: any) => {
             }}
           >
             <span className="text-xl font-bold">{t("Contact")}</span>
-          </NavLink>
-        </div>
-
-        <div className="w-full py-2 px-auto mt-8 mb-12">
-          <NavLink
-            to="/workareas"
-            className={({ isActive }) =>
-              isActive ? "text-yellow-700 font-bold hover:text-yellow-700" : ""
-            }
-            onClick={() => {
-              setSidebarStatus("hidden");
-              setRotateSidebarButton("animate-[spin_0.4s_1]");
-              setRotateMenuButton("");
-            }}
-          >
-            <span className="text-xl font-bold">{t("WorkAreas")}</span>
           </NavLink>
         </div>
       </section>
@@ -147,7 +147,7 @@ const Sidebar = ({ t }: any) => {
       {/* social links and contacts section */}
       <div className="flex justify-center mt-12">
         <span className="flex">
-          <span className="mr-8">
+          <span>
             <Link to="https://www.linkedin.com">
               <FaLinkedin className="w-8 h-8" />
             </Link>

@@ -56,10 +56,10 @@ const Footer = ({ t }: any) => {
             <Link to="/">{t("Home")}</Link>
           </p>
           <p>
-            <Link to="/contact">{t("Contact")}</Link>
+            <Link to="/services">{t("Services")}</Link>
           </p>
           <p>
-            <Link to="/workareas">{t("WorkAreas")}</Link>
+            <Link to="/contact">{t("Contact")}</Link>
           </p>
         </div>
         <div className="h-[4px] w-full max-w-[1200px] bg-yellow-700 bg-opacity-70 mx-auto my-2"></div>

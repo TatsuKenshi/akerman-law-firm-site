@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 
 const Home = React.lazy(() => import("./pages/Home"));
-const WorkAreas = React.lazy(() => import("./pages/WorkAreas"));
+const Services = React.lazy(() => import("./pages/Services"));
 const Contact = React.lazy(() => import("./pages/Contact"));
 const Error = React.lazy(() => import("./pages/Error"));
 
@@ -24,18 +24,18 @@ function App() {
         }
       />
       <Route
-        path="contact"
+        path="services"
         element={
           <React.Suspense fallback={<>...</>}>
-            <Contact />
+            <Services />
           </React.Suspense>
         }
       />
       <Route
-        path="workareas"
+        path="contact"
         element={
           <React.Suspense fallback={<>...</>}>
-            <WorkAreas />
+            <Contact />
           </React.Suspense>
         }
       />
