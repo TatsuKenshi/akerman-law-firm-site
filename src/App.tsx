@@ -9,10 +9,14 @@ const Error = React.lazy(() => import("./pages/Error"));
 function App() {
   // add a useEffect/custom hook which will switch page titles
   // Home page - about section localization and content - waiting
-  // Services page - pics/icons and styling for reveal cards
-  // Error page - localization
+  // Services/RevealCard - pics/icons and styling for reveal cards
+  // Services/Revealcard - move service area titles to the visible part of the reveal card
+  // Services/RevealCard - fix prop types (useText, Services, RevealCard)
   // PageHero - banner content customization and localization - waiting
   // PageHero - banner image - waiting
+  // PageHero - move props textNodes to localization json files
+  // useText - move textNodes for cards to localization json files
+  // Error page - localization
 
   return (
     <Routes>

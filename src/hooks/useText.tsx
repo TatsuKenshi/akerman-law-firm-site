@@ -1,3 +1,4 @@
+import { withTranslation } from "react-i18next";
 import { FaClock } from "react-icons/fa";
 import { CardItemType } from "../content/types";
 

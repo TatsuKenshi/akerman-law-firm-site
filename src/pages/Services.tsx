@@ -4,7 +4,7 @@ import { withTranslation } from "react-i18next";
 import useText from "../hooks/useText";
 
 const PageHero = React.lazy(() => import("../components/PageHero"));
-const FlipCard = React.lazy(() => import("../components/FlipCard"));
+// const FlipCard = React.lazy(() => import("../components/FlipCard"));
 const RevealCard = React.lazy(() => import("../components/RevealCard"));
 
 const Services = ({ t }: any) => {
@@ -46,13 +46,13 @@ in a wide range of legal areas."
       </div>
 
       {/* flip card section */}
-      <section className="mt-8">
+      {/* <section className="mt-8">
         <div className="flex max-w-[1200px] mx-auto justify-evenly flex-wrap mt-4 px-8 pt-4">
           {cardItems.map((item) => {
             return <FlipCard key={item.id} {...item} />;
           })}
         </div>
-      </section>
+      </section> */}
 
       {/* reveal card section */}
       <section>

@@ -7,7 +7,7 @@ const RevealCard = ({ textSr: TextSr, textEng: TextEng }: any) => {
 
   return (
     <div className="w-11/12 sm:w-7/12 lg:w-[300px] h-max bg-sky-900 cursor-pointer text-white mx-3 mb-4 rounded-md">
-      <div className="mb-2">
+      <div className="mb-2 h-32">
         <h2>Reveal Card</h2>
         <p>Visible part - icon/photo</p>
       </div>
@@ -43,7 +43,15 @@ const RevealCard = ({ textSr: TextSr, textEng: TextEng }: any) => {
             }
           }}
         >
-          {!revealSection ? "More" : "Close"}
+          {language === "en" ? (
+            <span className="text-2xl font-bold">
+              {!revealSection ? "More" : "Close"}
+            </span>
+          ) : (
+            <span className="text-2xl font-bold">
+              {!revealSection ? "Više" : "Zatvori"}
+            </span>
+          )}
         </button>
       </div>
     </div>
