@@ -1,12 +1,31 @@
-import { withTranslation } from "react-i18next";
-import { cardItems } from "../content/content";
 import React from "react";
+import { withTranslation } from "react-i18next";
+// import { cardItems } from "../content/content";
+import useText from "../hooks/useText";
 
 const PageHero = React.lazy(() => import("../components/PageHero"));
 const FlipCard = React.lazy(() => import("../components/FlipCard"));
 const RevealCard = React.lazy(() => import("../components/RevealCard"));
 
 const Services = ({ t }: any) => {
+  const {
+    textSr1,
+    textEng1,
+    textSr2,
+    textEng2,
+    textSr3,
+    textEng3,
+    textSr4,
+    textEng4,
+    textSr5,
+    textEng5,
+    textSr6,
+    textEng6,
+    textSr7,
+    textEng7,
+    cardItems,
+  } = useText();
+
   return (
     <main>
       <PageHero />
@@ -26,58 +45,22 @@ const Services = ({ t }: any) => {
             return <FlipCard key={item.id} {...item} />;
           })}
         </div>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique
-          voluptatibus dolorum quia, cupiditate illum quis sit incidunt
-          consequuntur, eum aliquam libero ab culpa facilis animi assumenda.
-          Animi eius, blanditiis numquam modi ad, aliquid reiciendis libero
-          nostrum nobis, nisi neque deleniti.
-        </p>
       </section>
 
       {/* reveal card section */}
       <section>
-        <div className="flex flex-col md:flex-row h-max max-w-[1200px] mx-auto justify-evenly flex-wrap mt-4 px-4 pt-4">
-          <RevealCard
-            text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta porro odit veritatis excepturi quod maiores delectus neque, placeat dolorem vitae."
-            height="250"
-          />
-          <RevealCard
-            text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique voluptatibus dolorum quia, cupiditate illum quis sit incidunt consequuntur, eum aliquam libero ab culpa facilis animi assumenda. Animi eius, blanditiis numquam modi ad, aliquid reiciendis libero nostrum nobis, nisi neque deleniti."
-            height="400"
-          />
-          <RevealCard
-            text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae earum fugiat eaque culpa? Facilis iste odio officia, facere voluptatum corrupti qui et debitis ab porro aliquam libero eaque incidunt ipsum!"
-            height="300"
-          />
+        <div className="flex h-max max-w-[1200px] mx-auto justify-center lg:justify-evenly flex-wrap mt-4 px-4 pt-4">
+          <RevealCard textSr={textSr1} textEng={textEng1} />
+          <RevealCard textSr={textSr2} textEng={textEng2} />
+          <RevealCard textSr={textSr3} textEng={textEng3} />
         </div>
-        <div className="flex flex-col md:flex-row h-max max-w-[1200px] mx-auto justify-evenly flex-wrap px-4">
-          <RevealCard
-            text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae earum fugiat eaque culpa? Facilis iste odio officia, facere voluptatum corrupti qui et debitis ab porro aliquam libero eaque incidunt ipsum!"
-            height="300"
-          />
-          <RevealCard
-            text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta porro odit veritatis excepturi quod maiores delectus neque, placeat dolorem vitae."
-            height="250"
-          />
-          <RevealCard
-            text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique voluptatibus dolorum quia, cupiditate illum quis sit incidunt consequuntur, eum aliquam libero ab culpa facilis animi assumenda. Animi eius, blanditiis numquam modi ad, aliquid reiciendis libero nostrum nobis, nisi neque deleniti."
-            height="400"
-          />
+        <div className="flex h-max max-w-[1200px] mx-auto justify-evenly flex-wrap px-4">
+          <RevealCard textSr={textSr4} textEng={textEng4} />
+          <RevealCard textSr={textSr5} textEng={textEng5} />
+          <RevealCard textSr={textSr6} textEng={textEng6} />
         </div>
-        <div className="flex flex-col md:flex-row h-max max-w-[1200px] mx-auto justify-evenly flex-wrap px-4">
-          <RevealCard
-            text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique voluptatibus dolorum quia, cupiditate illum quis sit incidunt consequuntur, eum aliquam libero ab culpa facilis animi assumenda. Animi eius, blanditiis numquam modi ad, aliquid reiciendis libero nostrum nobis, nisi neque deleniti."
-            height="400"
-          />
-          <RevealCard
-            text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae earum fugiat eaque culpa? Facilis iste odio officia, facere voluptatum corrupti qui et debitis ab porro aliquam libero eaque incidunt ipsum!"
-            height="300"
-          />
-          <RevealCard
-            text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta porro odit veritatis excepturi quod maiores delectus neque, placeat dolorem vitae."
-            height="250"
-          />
+        <div className="flex h-max max-w-[1200px] mx-auto justify-evenly flex-wrap px-4">
+          <RevealCard textSr={textSr7} textEng={textEng7} />
         </div>
       </section>
     </main>

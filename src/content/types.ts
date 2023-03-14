@@ -5,6 +5,6 @@ export type CardItemType = {
   icon: IconType;
   engTitle: string;
   serTitle: string;
-  engContent: string;
-  serContent: string;
+  engContent: any;
+  serContent: any;
 };

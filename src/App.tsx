@@ -8,10 +8,11 @@ const Error = React.lazy(() => import("./pages/Error"));
 
 function App() {
   // add a useEffect/custom hook which will switch page titles
-  // favicon
   // error page localization
   // pageHero banner localization
   // about section localization
+  // services card content
+  // // explore if we can have content.tsx assign engContent and srContent properties unnamed functions which return JSX
 
   return (
     <Routes>

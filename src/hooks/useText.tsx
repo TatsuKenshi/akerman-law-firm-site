@@ -1,0 +1,329 @@
+import { FaClock } from "react-icons/fa";
+import { CardItemType } from "../content/types";
+
+const useText = () => {
+  const textSr1 = (): any => {
+    return (
+      <>
+        <h2>KOMPANIJSKO PRAVO</h2>
+        <p className="w-full mb-4">
+          Mi Brinemo o usaglašenosti Vašeg poslovanja sa relevantnom pravnom
+          regulativom, kako bi Vaše društvo nesmetano funkcionisalo na tržištu
+          Republike Srbije.
+        </p>
+        <p className="w-full mb-2">Naše usluge uključuju:</p>
+        <ul className="list-disc">
+          <li>Osnivanje privrednih društava</li>
+          <li>
+            Registraciju poslovnih podataka, promena i podnošenje ostalih
+            registracionih prijava u Agenciji za privredne registre
+          </li>
+          <li>
+            Pripremu neophodne dokumentacije i savetovanje prilikom statusnih
+            promena, povećanja i smanjenja kapitala društva
+          </li>
+          <li>Pravno savetovanje u vezi sa korporativnim upravljanjem</li>
+          <li>
+            Izradu osnivačkih akata, statuta, ugovora članova društva,
+            pravilnika, internih procedura, odluka i drugih internih
+            kompanijskih akata
+          </li>
+          <li>
+            Pripremu i savetovanje u vezi sa održavanjem skupština društva i
+            sednica upravnih, izvršnih i nadzornih odbora
+          </li>
+        </ul>
+      </>
+    );
+  };
+
+  const textEng1 = (): any => {
+    return (
+      <>
+        <h2>COMPANY LAW</h2>
+        <p className="w-full mb-4">
+          Our law firm can assist you in a phase of pre-incorporation and
+          incorporation of your company in Serbia as well as provide legal
+          support in all other regulatory matters related to the functioning of
+          the company in Serbia.
+        </p>
+        <p className="w-full mb-2">Our service include:</p>
+        <ul className="list-disc">
+          <li>
+            Advising on and preparation of all necessary documents for the
+            establishment of the company, associations, foundations and other
+            legal entities
+          </li>
+          <li>
+            Registrations and filings with Serbian Business Registers Agency and
+            other institutions
+          </li>
+          <li>
+            Drafting of documentation and legal advising concerning statutory
+            changes, and increase/reduction of the capital
+          </li>
+          <li>Legal advising related to Corporate governance</li>
+          <li>
+            Drafting of a memorandum of association, articles of association,
+            shareholders agreements, rules, procedures, decisions and other
+            internal corporate documents
+          </li>
+          <li>
+            Preparation and legal advice concerning shareholders' assembly, a
+            board of directors, executive board and supervisory board meetings
+          </li>
+        </ul>
+      </>
+    );
+  };
+
+  const textSr2 = (): any => {
+    return (
+      <>
+        <h2>IZVRŠENJE</h2>
+        <p className="w-full mb-4">
+          Naša advokatska kancelarija Vam može pružiti pravnu pomoć u svim
+          fazama izvršnog postupka.
+        </p>
+        <p>
+          U cilju pružanja najefikasnije usluge naš tim će utvrditi solventnost
+          dužnika, postojanje pokretne i nepokretne imovine, inicirati
+          sprovođenje privremene mere i proceniti isplativost sprovođenja
+          izvršenja za klijenta.
+        </p>
+      </>
+    );
+  };
+
+  const textEng2 = (): any => {
+    return (
+      <>
+        <h2>ENFORCEMENT</h2>
+        <p className="w-full mb-4">
+          Our Law Firm can provide you with legal support in any step of
+          enforcement procedure.
+        </p>
+        <p>
+          To provide the most effective legal service, we will assess the
+          solvency of the debtor, the existence of the movable and immovable
+          property, initiate possible interim measures and evaluate the cost-
+          effectiveness of enforcement.
+        </p>
+      </>
+    );
+  };
+
+  const textSr3 = (): any => {
+    return (
+      <>
+        <h2>NEPOKRETNOSTI</h2>
+        <p>
+          Pružamo pouzdanu podršku klijentima u oblasti imovinsko-pravnih
+          odnosa. Vršimo detaljnu proveru i analizu pravnog statusa
+          nepokretnosti, i upozoravamo na sve eventualne rizike. U skladu sa
+          zahtevima klijenta proaktivno učestvujemo u pregovorima i pripremi
+          svih akata neophodnih za realizaciju pravnog posla.
+        </p>
+      </>
+    );
+  };
+
+  const textEng3 = (): any => {
+    return (
+      <>
+        <h2>PROPERTY LAW</h2>
+        <p>
+          We provide reliable support to clients in the area of property and
+          legal relations. We carry out a detailed check and analysis of the
+          legal status of real estate, and warn of all potential risks. In
+          accordance with the client's requirements, we proactively participate
+          in the negotiations and preparation of all acts necessary for the
+          realization of the legal work.
+        </p>
+      </>
+    );
+  };
+
+  const textSr4 = (): any => {
+    return (
+      <>
+        <h2>RADNO PRAVO</h2>
+        <p>
+          Advokatska kancelarija Akerman pomaže kompanijama i pojedincima u
+          rešavanju svih vrsta individualnih i kolektivnih radnih odnosa koji
+          proističu iz korporativnih odnosa.
+        </p>
+      </>
+    );
+  };
+
+  const textEng4 = (): any => {
+    return (
+      <>
+        <h2>LABOUR LAW</h2>
+        <p>
+          Akerman Law Office assists companies and individuals while dealing
+          with all types of individual and collective employment relationships
+          arising from the corporate relations.
+        </p>
+      </>
+    );
+  };
+
+  const textSr5 = (): any => {
+    return (
+      <>
+        <h2>ZASTUPANJE KLIJENATA PRED SUDOVIMA I DRUGIM DRŽAVNIM ORGANIMA</h2>
+        <p>
+          Zastupanje pravnih i fizičkih lica u parničnim, vanparničnim i
+          upravnim postupcima pred domaćim sudovima i drugim državnim organima u
+          širokom spektru oblasti prava.
+        </p>
+      </>
+    );
+  };
+
+  const textEng5 = (): any => {
+    return (
+      <>
+        <h2>REPRESENTING CLIENTS BEFORE THE COURTS AND OTHER STATE BODIES</h2>
+        <p>
+          We represent individuals and legal entities in a wide range of legal
+          areas in disputes, out-of- court cases and administrative proceedings
+          before courts and other state authorities.
+        </p>
+      </>
+    );
+  };
+
+  const textSr6 = (): any => {
+    return (
+      <>
+        <h2>NASLEDNO I PORODIČNO PRAVO</h2>
+        <p>
+          Zastupanje fizičkih lica pred sudovima, javnim beležnicima, drugim
+          državnim organima i trećim licima u oblasti porodičnog i naslednog
+          prava.
+        </p>
+      </>
+    );
+  };
+
+  const textEng6 = (): any => {
+    return (
+      <>
+        <h2>FAMILY AND INHERITANCE LAW</h2>
+        <p>
+          We represent individuals before courts, public notaries, other state
+          authorities, and before third parties in cases of family and
+          inheritance law.
+        </p>
+      </>
+    );
+  };
+
+  const textSr7 = (): any => {
+    return (
+      <>
+        <h2>UPRAVNO PRAVO</h2>
+        <p>
+          Naša advokatska kancelarija pruža punu pravnu podršku svojim
+          klijentima u oblasti upravnog prava, uključujući zastupanje pred
+          Upravnim sudom i svim upravnim organima.
+        </p>
+      </>
+    );
+  };
+
+  const textEng7 = (): any => {
+    return (
+      <>
+        <h2>ADMINISTRATION LAW</h2>
+        <p>
+          Our law office provides full legal support to its clients in
+          administrative matters, including representing before administration
+          court and all administration bodies.
+        </p>
+      </>
+    );
+  };
+
+  const cardItems: CardItemType[] = [
+    {
+      id: 0,
+      icon: FaClock,
+      engTitle: "COMPANY LAW",
+      serTitle: "KOMPANIJSKO PRAVO",
+      engContent: textEng1,
+      serContent: textSr1,
+    },
+    {
+      id: 1,
+      icon: FaClock,
+      engTitle: "ENFORCEMENT",
+      serTitle: "IZVRŠENJE",
+      engContent: textEng2,
+      serContent: textSr2,
+    },
+    {
+      id: 2,
+      icon: FaClock,
+      engTitle: "PROPERTY LAW",
+      serTitle: "NEPOKRETNOSTI",
+      engContent: textEng3,
+      serContent: textSr3,
+    },
+    {
+      id: 3,
+      icon: FaClock,
+      engTitle: "LABOUR LAW",
+      serTitle: "RADNO PRAVO",
+      engContent: textEng4,
+      serContent: textSr4,
+    },
+    {
+      id: 4,
+      icon: FaClock,
+      engTitle: "REPRESENTING CLIENTS BEFORE THE COURTS AND OTHER STATE BODIES",
+      serTitle: "ZASTUPANJE KLIJENATA PRED SUDOVIMA I DRUGIM DRŽAVNIM ORGANIMA",
+      engContent: textEng5,
+      serContent: textSr5,
+    },
+    {
+      id: 5,
+      icon: FaClock,
+      engTitle: "FAMILY AND INHERITANCE LAW",
+      serTitle: "NASLEDNO I PORODIČNO PRAVO",
+      engContent: textEng6,
+      serContent: textSr6,
+    },
+    {
+      id: 6,
+      icon: FaClock,
+      engTitle: "ADMINISTRATION LAW",
+      serTitle: "UPRAVNO PRAVO",
+      engContent: textEng7,
+      serContent: textSr7,
+    },
+  ];
+
+  return {
+    textSr1,
+    textEng1,
+    textSr2,
+    textEng2,
+    textSr3,
+    textEng3,
+    textSr4,
+    textEng4,
+    textSr5,
+    textEng5,
+    textSr6,
+    textEng6,
+    textSr7,
+    textEng7,
+    cardItems,
+  };
+};
+
+export default useText;
