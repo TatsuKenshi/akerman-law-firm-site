@@ -1,12 +1,12 @@
-import { withTranslation } from "react-i18next";
 import { FaClock } from "react-icons/fa";
 import { CardItemType } from "../content/types";
 
+// React.ReactElement<any, any>;
+
 const useText = () => {
-  const textSr1 = (): any => {
+  const textSr1 = (): React.ReactElement => {
     return (
       <>
-        <h2>KOMPANIJSKO PRAVO</h2>
         <p className="w-full mb-4">
           Mi Brinemo o usaglašenosti Vašeg poslovanja sa relevantnom pravnom
           regulativom, kako bi Vaše društvo nesmetano funkcionisalo na tržištu
@@ -38,10 +38,9 @@ const useText = () => {
     );
   };
 
-  const textEng1 = (): any => {
+  const textEng1 = (): React.ReactElement => {
     return (
       <>
-        <h2>COMPANY LAW</h2>
         <p className="w-full mb-4">
           Our law firm can assist you in a phase of pre-incorporation and
           incorporation of your company in Serbia as well as provide legal
@@ -78,10 +77,9 @@ const useText = () => {
     );
   };
 
-  const textSr2 = (): any => {
+  const textSr2 = (): React.ReactElement => {
     return (
       <>
-        <h2>IZVRŠENJE</h2>
         <p className="w-full mb-4">
           Naša advokatska kancelarija Vam može pružiti pravnu pomoć u svim
           fazama izvršnog postupka.
@@ -96,10 +94,9 @@ const useText = () => {
     );
   };
 
-  const textEng2 = (): any => {
+  const textEng2 = (): React.ReactElement => {
     return (
       <>
-        <h2>ENFORCEMENT</h2>
         <p className="w-full mb-4">
           Our Law Firm can provide you with legal support in any step of
           enforcement procedure.
@@ -114,138 +111,108 @@ const useText = () => {
     );
   };
 
-  const textSr3 = (): any => {
+  const textSr3 = (): React.ReactElement => {
     return (
-      <>
-        <h2>NEPOKRETNOSTI</h2>
-        <p>
-          Pružamo pouzdanu podršku klijentima u oblasti imovinsko-pravnih
-          odnosa. Vršimo detaljnu proveru i analizu pravnog statusa
-          nepokretnosti, i upozoravamo na sve eventualne rizike. U skladu sa
-          zahtevima klijenta proaktivno učestvujemo u pregovorima i pripremi
-          svih akata neophodnih za realizaciju pravnog posla.
-        </p>
-      </>
+      <p>
+        Pružamo pouzdanu podršku klijentima u oblasti imovinsko-pravnih odnosa.
+        Vršimo detaljnu proveru i analizu pravnog statusa nepokretnosti, i
+        upozoravamo na sve eventualne rizike. U skladu sa zahtevima klijenta
+        proaktivno učestvujemo u pregovorima i pripremi svih akata neophodnih za
+        realizaciju pravnog posla.
+      </p>
     );
   };
 
-  const textEng3 = (): any => {
+  const textEng3 = (): React.ReactElement => {
     return (
-      <>
-        <h2>PROPERTY LAW</h2>
-        <p>
-          We provide reliable support to clients in the area of property and
-          legal relations. We carry out a detailed check and analysis of the
-          legal status of real estate, and warn of all potential risks. In
-          accordance with the client's requirements, we proactively participate
-          in the negotiations and preparation of all acts necessary for the
-          realization of the legal work.
-        </p>
-      </>
+      <p>
+        We provide reliable support to clients in the area of property and legal
+        relations. We carry out a detailed check and analysis of the legal
+        status of real estate, and warn of all potential risks. In accordance
+        with the client's requirements, we proactively participate in the
+        negotiations and preparation of all acts necessary for the realization
+        of the legal work.
+      </p>
     );
   };
 
-  const textSr4 = (): any => {
+  const textSr4 = (): React.ReactElement => {
     return (
-      <>
-        <h2>RADNO PRAVO</h2>
-        <p>
-          Advokatska kancelarija Akerman pomaže kompanijama i pojedincima u
-          rešavanju svih vrsta individualnih i kolektivnih radnih odnosa koji
-          proističu iz korporativnih odnosa.
-        </p>
-      </>
+      <p>
+        Advokatska kancelarija Akerman pomaže kompanijama i pojedincima u
+        rešavanju svih vrsta individualnih i kolektivnih radnih odnosa koji
+        proističu iz korporativnih odnosa.
+      </p>
     );
   };
 
-  const textEng4 = (): any => {
+  const textEng4 = (): React.ReactElement => {
     return (
-      <>
-        <h2>LABOUR LAW</h2>
-        <p>
-          Akerman Law Office assists companies and individuals while dealing
-          with all types of individual and collective employment relationships
-          arising from the corporate relations.
-        </p>
-      </>
+      <p>
+        Akerman Law Office assists companies and individuals while dealing with
+        all types of individual and collective employment relationships arising
+        from the corporate relations.
+      </p>
     );
   };
 
-  const textSr5 = (): any => {
+  const textSr5 = (): React.ReactElement => {
     return (
-      <>
-        <h2>ZASTUPANJE KLIJENATA PRED SUDOVIMA I DRUGIM DRŽAVNIM ORGANIMA</h2>
-        <p>
-          Zastupanje pravnih i fizičkih lica u parničnim, vanparničnim i
-          upravnim postupcima pred domaćim sudovima i drugim državnim organima u
-          širokom spektru oblasti prava.
-        </p>
-      </>
+      <p>
+        Zastupanje pravnih i fizičkih lica u parničnim, vanparničnim i upravnim
+        postupcima pred domaćim sudovima i drugim državnim organima u širokom
+        spektru oblasti prava.
+      </p>
     );
   };
 
-  const textEng5 = (): any => {
+  const textEng5 = (): React.ReactElement => {
     return (
-      <>
-        <h2>REPRESENTING CLIENTS BEFORE THE COURTS AND OTHER STATE BODIES</h2>
-        <p>
-          We represent individuals and legal entities in a wide range of legal
-          areas in disputes, out-of- court cases and administrative proceedings
-          before courts and other state authorities.
-        </p>
-      </>
+      <p>
+        We represent individuals and legal entities in a wide range of legal
+        areas in disputes, out-of- court cases and administrative proceedings
+        before courts and other state authorities.
+      </p>
     );
   };
 
-  const textSr6 = (): any => {
+  const textSr6 = (): React.ReactElement => {
     return (
-      <>
-        <h2>NASLEDNO I PORODIČNO PRAVO</h2>
-        <p>
-          Zastupanje fizičkih lica pred sudovima, javnim beležnicima, drugim
-          državnim organima i trećim licima u oblasti porodičnog i naslednog
-          prava.
-        </p>
-      </>
+      <p>
+        Zastupanje fizičkih lica pred sudovima, javnim beležnicima, drugim
+        državnim organima i trećim licima u oblasti porodičnog i naslednog
+        prava.
+      </p>
     );
   };
 
-  const textEng6 = (): any => {
+  const textEng6 = (): React.ReactElement => {
     return (
-      <>
-        <h2>FAMILY AND INHERITANCE LAW</h2>
-        <p>
-          We represent individuals before courts, public notaries, other state
-          authorities, and before third parties in cases of family and
-          inheritance law.
-        </p>
-      </>
+      <p>
+        We represent individuals before courts, public notaries, other state
+        authorities, and before third parties in cases of family and inheritance
+        law.
+      </p>
     );
   };
 
-  const textSr7 = (): any => {
+  const textSr7 = (): React.ReactElement => {
     return (
-      <>
-        <h2>UPRAVNO PRAVO</h2>
-        <p>
-          Naša advokatska kancelarija pruža punu pravnu podršku svojim
-          klijentima u oblasti upravnog prava, uključujući zastupanje pred
-          Upravnim sudom i svim upravnim organima.
-        </p>
-      </>
+      <p>
+        Naša advokatska kancelarija pruža punu pravnu podršku svojim klijentima
+        u oblasti upravnog prava, uključujući zastupanje pred Upravnim sudom i
+        svim upravnim organima.
+      </p>
     );
   };
 
-  const textEng7 = (): any => {
+  const textEng7 = (): React.ReactElement => {
     return (
-      <>
-        <h2>ADMINISTRATION LAW</h2>
-        <p>
-          Our law office provides full legal support to its clients in
-          administrative matters, including representing before administration
-          court and all administration bodies.
-        </p>
-      </>
+      <p>
+        Our law office provides full legal support to its clients in
+        administrative matters, including representing before administration
+        court and all administration bodies.
+      </p>
     );
   };
 

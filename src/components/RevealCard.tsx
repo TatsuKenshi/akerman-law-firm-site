@@ -1,7 +1,19 @@
 import { useState } from "react";
 import i18next from "i18next";
 
-const RevealCard = ({ textSr: TextSr, textEng: TextEng }: any) => {
+type RevealCardPropsTypes = {
+  titleSr: string;
+  titleEng: string;
+  TextSr: React.ReactElement;
+  TextEng: React.ReactElement;
+};
+
+const RevealCard = ({
+  TextSr,
+  TextEng,
+  titleSr,
+  titleEng,
+}: RevealCardPropsTypes) => {
   const [revealSection, setRevealSection] = useState<boolean>(false);
   const language = i18next.language;
 
@@ -10,6 +22,7 @@ const RevealCard = ({ textSr: TextSr, textEng: TextEng }: any) => {
       <div className="mb-2 h-32">
         <h2>Reveal Card</h2>
         <p>Visible part - icon/photo</p>
+        <h2>{language === "en" ? titleEng : titleSr}</h2>
       </div>
       {/* smooth transition attempt */}
       {/* <div
@@ -30,7 +43,7 @@ const RevealCard = ({ textSr: TextSr, textEng: TextEng }: any) => {
           !revealSection ? "hidden" : ""
         } overflow-hidden w-full px-6 py-2 flex flex-wrap content-center`}
       >
-        {language === "en" ? <TextEng /> : <TextSr />}
+        {language === "en" ? TextEng : TextSr}
       </div>
 
       <div>
