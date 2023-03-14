@@ -7,7 +7,14 @@ const ContactForm = React.lazy(() => import("../components/ContactForm"));
 const Contact = ({ t }: any) => {
   return (
     <main>
-      <PageHero />
+      <PageHero
+        srTitle="Kontakt"
+        srContent="Advokatska kancelarija Akerman Vam pruža punu pravnu i administrativnu podršku u vezi svih pravnih i
+regulatornih stvari. Naše usluge obuhvataju pravno savetovanje u različitim oblastima prava."
+        engTitle="Contact"
+        engContent="Akerman Law office can offer you tailor-made advice solutions to various queries. We provide legal support
+in a wide range of legal areas."
+      />
 
       {/* title div */}
       <div className="mt-8 text-center mx-4">

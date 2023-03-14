@@ -1,19 +1,24 @@
-import React from "react";
+import i18next from "i18next";
 import banner1 from "../assets/banner1.jpg";
 
-const PageHero = () => {
+type PageHeroPropsTypes = {
+  srTitle: string;
+  engTitle: string;
+  srContent: string;
+  engContent: string;
+};
+
+const PageHero = (props: PageHeroPropsTypes) => {
+  const language = i18next.language;
+
   return (
     <div className="relative h-96 lg:h-[450px] mt-8 overflow-hidden bg-sky-900 bg-opacity-50">
       <div className="absolute z-30 flex w-full h-full">
         <div className="relative z-30 w-4/6 md:w-3/6 lg:w-2/6 px-6 py-4 text-white md:w-1/2">
           <h2 className="text-lg md:text-xl lg:text-2xl mb-4 font-bold">
-            This is a banner title
+            {language === "en" ? props.engTitle : props.srTitle}
           </h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint,
-            nihil impedit repellendus delectus earum ex vero tempore rerum
-            officia tenetur corrupti aliquid officiis quos necessitatibus?
-          </p>
+          <p>{language === "en" ? props.engContent : props.srContent}</p>
           <span></span>
         </div>
         <div className="absolute top-0 right-0 flex w-full h-full">

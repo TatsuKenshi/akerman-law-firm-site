@@ -8,7 +8,7 @@ const FlipCard = React.lazy(() => import("../components/FlipCard"));
 const WorkAreas = ({ t }: any) => {
   return (
     <main>
-      <PageHero />
+      {/* <PageHero /> */}
 
       {/* title div */}
       <div className="mt-8 text-center mx-4">
