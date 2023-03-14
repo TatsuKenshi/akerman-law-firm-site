@@ -12,8 +12,7 @@ function App() {
   // Services/RevealCard - pics/icons and styling for reveal cards
   // PageHero - banner content customization and localization - waiting
   // PageHero - banner image - waiting
-  // PageHero - move props textNodes to localization json files
-  // useText - move textNodes for cards to localization json files
+  // PageHero - move props textNodes to localization json files ??? is it possible
   // Error page - localization
 
   return (
