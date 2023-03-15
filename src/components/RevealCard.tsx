@@ -29,10 +29,14 @@ const RevealCard = ({
   const reveal = () => setShow(!show);
 
   return (
-    <div className="w-11/12 sm:w-7/12 lg:w-[300px] h-max bg-white cursor-pointer mx-3 mb-4 rounded-md border-4 border-sky-900">
-      <div className="mb-2 h-content text-center">
-        <img src={justice} alt="justice" className="w-full" />
-        <h2 className="my-8 font-bold text-sky-900">
+    <div className="group w-11/12 sm:w-7/12 lg:w-[300px] h-max cursor-pointer mx-3 mb-20 rounded-md hover:shadow-2xl hover:bg-slate-50">
+      <div className="mb-2 h-content text-center lg:text-left">
+        <img
+          src={justice}
+          alt="justice"
+          className="w-full grayscale group-hover:grayscale-0"
+        />
+        <h2 className="mt-8 mb-4 text-xl text-sky-900 px-6">
           {language === "en" ? titleEng : titleSr}
         </h2>
       </div>
@@ -41,7 +45,7 @@ const RevealCard = ({
         {show && <div>{language === "en" ? TextEng : TextSr}</div>}
       </div>
 
-      <div className="text-center lg:text-left px-6 mt-2">
+      <div className="text-center lg:text-left px-6 my-2">
         <button
           onClick={() => {
             reveal();
@@ -49,12 +53,12 @@ const RevealCard = ({
           }}
         >
           {language === "en" ? (
-            <span className="text-xl font-bold text-sky-900">
-              {!revealSection ? "More" : "Close"}
+            <span className="text-lg font-bold text-yellow-700">
+              {!revealSection ? "Read more" : "Close"}
             </span>
           ) : (
-            <span className="text-xl font-bold text-sky-900">
-              {!revealSection ? "Više" : "Zatvori"}
+            <span className="text-lg font-bold text-yellow-700">
+              {!revealSection ? "Više informacija" : "Zatvori"}
             </span>
           )}
         </button>
