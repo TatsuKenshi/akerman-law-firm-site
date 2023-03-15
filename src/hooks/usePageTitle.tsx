@@ -10,15 +10,11 @@ const usePageTitle = () => {
     srTitle,
     enTitle,
   }: usePageTitleProps): string => {
-    let title = "";
-
     if (language === "en") {
-      title = enTitle;
+      return (document.title = `Akerman | ${enTitle}`);
     } else {
-      title = srTitle;
+      return (document.title = `Akerman | ${srTitle}`);
     }
-
-    return (document.title = `Akerman | ${title}`);
   };
   return { changeTitle };
 };
