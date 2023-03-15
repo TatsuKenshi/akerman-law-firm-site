@@ -7,7 +7,6 @@ const Contact = React.lazy(() => import("./pages/Contact"));
 const Error = React.lazy(() => import("./pages/Error"));
 
 function App() {
-  // add a useEffect/custom hook which will switch page titles
   // Home page - about section localization and content - waiting
   // Services/RevealCard - pics/icons and styling for reveal cards
   // PageHero - banner content customization and localization - waiting
