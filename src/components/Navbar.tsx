@@ -20,7 +20,6 @@ const Navbar = ({ t }: any) => {
     setRotateMenuButton,
     setRotateSidebarButton,
   } = useSidebarContext() as SidebarContextType;
-  console.log(sidebarStatus);
 
   return (
     <nav className="z-50 sticky top-0 flex items-between lg:items-center h-24 w-full bg-sky-900 drop-shadow-2xl">

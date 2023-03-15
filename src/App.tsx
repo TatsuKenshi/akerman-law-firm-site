@@ -13,7 +13,7 @@ function App() {
   // PageHero - banner content customization and localization - waiting
   // PageHero - banner image - waiting
   // PageHero - move props textNodes to localization json files ??? is it possible
-  // Error page - localization
+  // Error page - i18n localization impossible - manual localization
 
   return (
     <Routes>
