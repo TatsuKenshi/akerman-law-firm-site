@@ -8,7 +8,6 @@ const Error = React.lazy(() => import("./pages/Error"));
 
 function App() {
   // Home page - about section localization and content - waiting
-  // Services/RevealCard - pics/icons and styling for reveal cards
   // PageHero - banner content customization and localization - waiting
   // PageHero - banner image - waiting
   // PageHero - move props textNodes to localization json files ??? is it possible

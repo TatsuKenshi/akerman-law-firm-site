@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import PageHero from "../components/PageHero";
-import { withTranslation } from "react-i18next";
 
 const Error = ({ t }: any) => {
   const navigate = useNavigate();
@@ -24,9 +23,7 @@ in a wide range of legal areas."
 
       {/* error and redirection message section */}
       <div className="mt-8 text-center mx-4">
-        <h1 className="text-9xl font-bold text-sky-900">
-          {t("ErrorPageTitle")}
-        </h1>
+        <h1 className="text-9xl font-bold text-sky-900">404</h1>
         <p className="text-xl font-bold text-sky-900">
           Ova stranica ne postoji.
         </p>
@@ -42,4 +39,4 @@ in a wide range of legal areas."
   );
 };
 
-export default withTranslation()(Error);
+export default Error;
