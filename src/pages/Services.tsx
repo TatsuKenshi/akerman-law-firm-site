@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { withTranslation } from "react-i18next";
 // import { cardItems } from "../content/content";
 import useText from "../hooks/useText";
+import usePageTitle from "../hooks/usePageTitle";
+import i18n from "../translation";
 
 const PageHero = React.lazy(() => import("../components/PageHero"));
 // const FlipCard = React.lazy(() => import("../components/FlipCard"));
@@ -25,6 +27,14 @@ const Services = ({ t }: any) => {
     textEng7: TextEng7,
     // cardItems,
   } = useText();
+
+  // page title customization and localization
+  const { changeTitle } = usePageTitle();
+  const language = i18n.language;
+
+  useEffect(() => {
+    changeTitle({ language: language, enTitle: "Services", srTitle: "Usluge" });
+  }, [language, changeTitle]);
 
   return (
     <main>

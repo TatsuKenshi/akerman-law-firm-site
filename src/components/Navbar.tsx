@@ -14,7 +14,6 @@ const Navbar = ({ t }: any) => {
   };
 
   const {
-    sidebarStatus,
     setSidebarStatus,
     rotateMenuButton,
     setRotateMenuButton,

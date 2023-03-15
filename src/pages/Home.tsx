@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { withTranslation } from "react-i18next";
+import usePageTitle from "../hooks/usePageTitle";
+import i18n from "../translation";
 
 const PageHero = React.lazy(() => import("../components/PageHero"));
 const About = React.lazy(() => import("../components/About"));
 
 const Home = ({ t }: any) => {
+  // page title customization and localization
+  const { changeTitle } = usePageTitle();
+  const language = i18n.language;
+
+  useEffect(() => {
+    changeTitle({ language: language, enTitle: "Home", srTitle: "Početna" });
+  }, [language, changeTitle]);
+
   return (
     <main className="overflow-hidden">
       <PageHero
