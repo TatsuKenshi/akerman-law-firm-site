@@ -14,6 +14,7 @@ function App() {
   // PageHero - banner image - waiting
   // PageHero - move props textNodes to localization json files ??? is it possible
   // Error page - localization
+  // Naslovna - change to Pocetna?
 
   return (
     <Routes>

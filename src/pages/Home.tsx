@@ -8,7 +8,7 @@ const Home = ({ t }: any) => {
   return (
     <main className="overflow-hidden">
       <PageHero
-        srTitle="Naslovna"
+        srTitle="Početna"
         srContent="Advokatska kancelarija Akerman Vam pruža punu pravnu i administrativnu podršku u vezi svih pravnih i
 regulatornih stvari. Naše usluge obuhvataju pravno savetovanje u različitim oblastima prava."
         engTitle="Home"
