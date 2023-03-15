@@ -7,7 +7,6 @@ import i18n from "./translation";
 import { BrowserRouter as Router } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
-import PageHero from "./components/PageHero";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import SidebarProvider from "./context/SidebarContext";
