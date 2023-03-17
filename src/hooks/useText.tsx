@@ -1,8 +1,6 @@
 import { FaClock } from "react-icons/fa";
 import { CardItemType } from "../content/types";
 
-// React.ReactElement<any, any>;
-
 const useText = () => {
   const textSr1 = (): React.ReactElement => {
     return (
