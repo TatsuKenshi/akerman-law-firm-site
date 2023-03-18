@@ -4,7 +4,7 @@ import autoAnimate from "@formkit/auto-animate";
 import justice from "../assets/justice.jpg";
 import { RevealCardPropsTypes } from "./types";
 import ProgressiveImage from "react-progressive-graceful-image";
-import placeholderSrc from "../assets/justice.jpg";
+import placeholderSrc from "../assets/justiceSmall.jpg";
 
 const RevealCard = ({
   TextSr,
