@@ -10,7 +10,6 @@ function App() {
   // Home page - about section localization and content - waiting
   // PageHero - banner content customization and localization - waiting
   // PageHero - banner image - waiting
-  // PageHero - move props textNodes to localization json files ??? is it possible
   // Error page - i18n localization impossible - manual localization
   // RevealCard - different images for different areas of work (images passed as props)
   // Progressive image loading

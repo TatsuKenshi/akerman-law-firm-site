@@ -2,13 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import i18next from "i18next";
 import autoAnimate from "@formkit/auto-animate";
 import justice from "../assets/justice.jpg";
-
-type RevealCardPropsTypes = {
-  titleSr: string;
-  titleEng: string;
-  TextSr: React.ReactElement;
-  TextEng: React.ReactElement;
-};
+import { RevealCardPropsTypes } from "./types";
 
 const RevealCard = ({
   TextSr,

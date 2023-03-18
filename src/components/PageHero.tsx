@@ -1,12 +1,6 @@
 import i18next from "i18next";
 import banner1 from "../assets/banner1.jpg";
-
-type PageHeroPropsTypes = {
-  srTitle: string;
-  engTitle: string;
-  srContent: string;
-  engContent: string;
-};
+import { PageHeroPropsTypes } from "./types";
 
 const PageHero = (props: PageHeroPropsTypes) => {
   const language = i18next.language;
