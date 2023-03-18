@@ -3,6 +3,8 @@ import i18next from "i18next";
 import autoAnimate from "@formkit/auto-animate";
 import justice from "../assets/justice.jpg";
 import { RevealCardPropsTypes } from "./types";
+import ProgressiveImage from "react-progressive-graceful-image";
+import placeholderSrc from "../assets/justice.jpg";
 
 const RevealCard = ({
   TextSr,
@@ -25,11 +27,17 @@ const RevealCard = ({
   return (
     <div className="group w-11/12 sm:w-7/12 lg:w-[300px] h-max cursor-pointer mx-3 mb-20 rounded-md hover:shadow-2xl hover:bg-slate-50">
       <div className="mb-2 h-content text-center lg:text-left">
-        <img
-          src={justice}
-          alt="justice"
-          className="w-full grayscale group-hover:grayscale-0"
-        />
+        <ProgressiveImage src={justice} placeholder={placeholderSrc}>
+          {(src, loading) => (
+            <img
+              src={src}
+              alt="justice"
+              className={`image${
+                loading ? " loading" : " loaded"
+              } w-full grayscale group-hover:grayscale-0`}
+            />
+          )}
+        </ProgressiveImage>
         <h2 className="mt-8 mb-4 text-xl text-sky-900 px-6">
           {language === "en" ? titleEng : titleSr}
         </h2>

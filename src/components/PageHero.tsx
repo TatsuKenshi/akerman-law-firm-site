@@ -45,7 +45,6 @@ const PageHero = (props: PageHeroPropsTypes) => {
               className={`image${
                 loading ? " loading" : " loaded"
               } object-cover h-full min-w-full`}
-              // className="object-cover h-full min-w-full"
               src={src}
             />
           )}
