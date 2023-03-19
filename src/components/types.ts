@@ -10,4 +10,6 @@ export type RevealCardPropsTypes = {
   titleEng: string;
   TextSr: React.ReactElement;
   TextEng: React.ReactElement;
+  mainImg: string;
+  placeholderImg: string;
 };

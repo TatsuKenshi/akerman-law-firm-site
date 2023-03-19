@@ -72,18 +72,24 @@ in a wide range of legal areas."
             titleEng="COMPANY LAW"
             TextSr={<TextSr1 />}
             TextEng={<TextEng1 />}
+            mainImg=""
+            placeholderImg=""
           />
           <RevealCard
             titleSr="IZVRŠENJE"
             titleEng="ENFORCEMENT"
             TextSr={<TextSr2 />}
             TextEng={<TextEng2 />}
+            mainImg=""
+            placeholderImg=""
           />
           <RevealCard
             titleSr="NEPOKRETNOSTI"
             titleEng="PROPERTY LAW"
             TextSr={<TextSr3 />}
             TextEng={<TextEng3 />}
+            mainImg=""
+            placeholderImg=""
           />
         </div>
         <div className="flex h-max max-w-[1200px] mx-auto justify-evenly flex-wrap px-4">
@@ -92,18 +98,24 @@ in a wide range of legal areas."
             titleEng="LABOUR LAW"
             TextSr={<TextSr4 />}
             TextEng={<TextEng4 />}
+            mainImg=""
+            placeholderImg=""
           />
           <RevealCard
             titleSr="ZASTUPANJE KLIJENATA PRED SUDOVIMA I DRUGIM DRŽAVNIM ORGANIMA"
             titleEng="REPRESENTING CLIENTS BEFORE THE COURTS AND OTHER STATE BODIES"
             TextSr={<TextSr5 />}
             TextEng={<TextEng5 />}
+            mainImg=""
+            placeholderImg=""
           />
           <RevealCard
             titleSr="NASLEDNO I PORODIČNO PRAVO"
             titleEng="FAMILY AND INHERITANCE LAW"
             TextSr={<TextSr6 />}
             TextEng={<TextEng6 />}
+            mainImg=""
+            placeholderImg=""
           />
         </div>
         <div className="flex h-max max-w-[1200px] mx-auto justify-evenly flex-wrap px-4">
@@ -112,6 +124,8 @@ in a wide range of legal areas."
             titleEng="ADMINISTRATION LAW"
             TextSr={<TextSr7 />}
             TextEng={<TextEng7 />}
+            mainImg=""
+            placeholderImg=""
           />
         </div>
       </section>

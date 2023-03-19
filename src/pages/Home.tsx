@@ -32,6 +32,7 @@ in a wide range of legal areas."
         <div className="h-[4px] w-11/12 max-w-[270px] bg-yellow-700 bg-opacity-70 mx-auto mt-2"></div>
       </div>
 
+      {/* about section */}
       <About />
     </main>
   );

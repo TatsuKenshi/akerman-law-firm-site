@@ -11,6 +11,8 @@ const RevealCard = ({
   TextEng,
   titleSr,
   titleEng,
+  mainImg,
+  placeholderImg,
 }: RevealCardPropsTypes) => {
   const [revealSection, setRevealSection] = useState<boolean>(false);
   const language = i18next.language;
