@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import { withTranslation } from "react-i18next";
-// import { cardItems } from "../content/content";
 import useText from "../hooks/useText";
 import usePageTitle from "../hooks/usePageTitle";
 import i18n from "../translation";
+import justice from "../assets/justice.jpg";
+import justiceSmall from "../assets/justiceSmall.jpg";
 
 const PageHero = React.lazy(() => import("../components/PageHero"));
-// const FlipCard = React.lazy(() => import("../components/FlipCard"));
 const RevealCard = React.lazy(() => import("../components/RevealCard"));
 
 const Services = ({ t }: any) => {
@@ -25,7 +25,6 @@ const Services = ({ t }: any) => {
     textEng6: TextEng6,
     textSr7: TextSr7,
     textEng7: TextEng7,
-    // cardItems,
   } = useText();
 
   // page title customization and localization
@@ -55,15 +54,6 @@ in a wide range of legal areas."
         <div className="h-[4px] w-11/12 max-w-[270px] bg-yellow-700 bg-opacity-70 mx-auto mt-2"></div>
       </div>
 
-      {/* flip card section */}
-      {/* <section className="mt-8">
-        <div className="flex max-w-[1200px] mx-auto justify-evenly flex-wrap mt-4 px-8 pt-4">
-          {cardItems.map((item) => {
-            return <FlipCard key={item.id} {...item} />;
-          })}
-        </div>
-      </section> */}
-
       {/* reveal card section */}
       <section>
         <div className="flex h-max max-w-[1200px] mx-auto justify-center lg:justify-evenly flex-wrap mt-4 px-4 pt-4">
@@ -72,24 +62,24 @@ in a wide range of legal areas."
             titleEng="COMPANY LAW"
             TextSr={<TextSr1 />}
             TextEng={<TextEng1 />}
-            mainImg=""
-            placeholderImg=""
+            mainImg={justice}
+            placeholderImg={justiceSmall}
           />
           <RevealCard
             titleSr="IZVRŠENJE"
             titleEng="ENFORCEMENT"
             TextSr={<TextSr2 />}
             TextEng={<TextEng2 />}
-            mainImg=""
-            placeholderImg=""
+            mainImg={justice}
+            placeholderImg={justiceSmall}
           />
           <RevealCard
             titleSr="NEPOKRETNOSTI"
             titleEng="PROPERTY LAW"
             TextSr={<TextSr3 />}
             TextEng={<TextEng3 />}
-            mainImg=""
-            placeholderImg=""
+            mainImg={justice}
+            placeholderImg={justiceSmall}
           />
         </div>
         <div className="flex h-max max-w-[1200px] mx-auto justify-evenly flex-wrap px-4">
@@ -98,24 +88,24 @@ in a wide range of legal areas."
             titleEng="LABOUR LAW"
             TextSr={<TextSr4 />}
             TextEng={<TextEng4 />}
-            mainImg=""
-            placeholderImg=""
+            mainImg={justice}
+            placeholderImg={justiceSmall}
           />
           <RevealCard
             titleSr="ZASTUPANJE KLIJENATA PRED SUDOVIMA I DRUGIM DRŽAVNIM ORGANIMA"
             titleEng="REPRESENTING CLIENTS BEFORE THE COURTS AND OTHER STATE BODIES"
             TextSr={<TextSr5 />}
             TextEng={<TextEng5 />}
-            mainImg=""
-            placeholderImg=""
+            mainImg={justice}
+            placeholderImg={justiceSmall}
           />
           <RevealCard
             titleSr="NASLEDNO I PORODIČNO PRAVO"
             titleEng="FAMILY AND INHERITANCE LAW"
             TextSr={<TextSr6 />}
             TextEng={<TextEng6 />}
-            mainImg=""
-            placeholderImg=""
+            mainImg={justice}
+            placeholderImg={justiceSmall}
           />
         </div>
         <div className="flex h-max max-w-[1200px] mx-auto justify-evenly flex-wrap px-4">
@@ -124,8 +114,8 @@ in a wide range of legal areas."
             titleEng="ADMINISTRATION LAW"
             TextSr={<TextSr7 />}
             TextEng={<TextEng7 />}
-            mainImg=""
-            placeholderImg=""
+            mainImg={justice}
+            placeholderImg={justiceSmall}
           />
         </div>
       </section>
