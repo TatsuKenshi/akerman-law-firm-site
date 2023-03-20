@@ -1,6 +1,3 @@
-import { FaClock } from "react-icons/fa";
-import { CardItemType } from "../content/types";
-
 const useText = () => {
   const textSr1 = (): React.ReactElement => {
     return (
@@ -218,65 +215,6 @@ const useText = () => {
     );
   };
 
-  const cardItems: CardItemType[] = [
-    {
-      id: 0,
-      icon: FaClock,
-      engTitle: "COMPANY LAW",
-      serTitle: "KOMPANIJSKO PRAVO",
-      engContent: textEng1,
-      serContent: textSr1,
-    },
-    {
-      id: 1,
-      icon: FaClock,
-      engTitle: "ENFORCEMENT",
-      serTitle: "IZVRŠENJE",
-      engContent: textEng2,
-      serContent: textSr2,
-    },
-    {
-      id: 2,
-      icon: FaClock,
-      engTitle: "PROPERTY LAW",
-      serTitle: "NEPOKRETNOSTI",
-      engContent: textEng3,
-      serContent: textSr3,
-    },
-    {
-      id: 3,
-      icon: FaClock,
-      engTitle: "LABOUR LAW",
-      serTitle: "RADNO PRAVO",
-      engContent: textEng4,
-      serContent: textSr4,
-    },
-    {
-      id: 4,
-      icon: FaClock,
-      engTitle: "REPRESENTING CLIENTS BEFORE THE COURTS AND OTHER STATE BODIES",
-      serTitle: "ZASTUPANJE KLIJENATA PRED SUDOVIMA I DRUGIM DRŽAVNIM ORGANIMA",
-      engContent: textEng5,
-      serContent: textSr5,
-    },
-    {
-      id: 5,
-      icon: FaClock,
-      engTitle: "FAMILY AND INHERITANCE LAW",
-      serTitle: "NASLEDNO I PORODIČNO PRAVO",
-      engContent: textEng6,
-      serContent: textSr6,
-    },
-    {
-      id: 6,
-      icon: FaClock,
-      engTitle: "ADMINISTRATION LAW",
-      serTitle: "UPRAVNO PRAVO",
-      engContent: textEng7,
-      serContent: textSr7,
-    },
-  ];
-
   return {
     textSr1,
     textEng1,
@@ -292,7 +230,6 @@ const useText = () => {
     textEng6,
     textSr7,
     textEng7,
-    cardItems,
   };
 };
 
