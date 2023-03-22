@@ -11,6 +11,7 @@ function App() {
   // PageHero - banner content customization and localization - waiting
   // PageHero - banner image - waiting
   // RevealCard - different images for different areas of work (images passed as props)
+  // oblasti rada bez "kancelarije"
 
   return (
     <Routes>
