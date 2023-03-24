@@ -13,3 +13,10 @@ export type RevealCardPropsTypes = {
   mainImg: string;
   placeholderImg: string;
 };
+
+export type DropDownMenuItemPropsTypes = {
+  titleSr: string;
+  titleEng: string;
+  TextSr: React.ReactElement;
+  TextEng: React.ReactElement;
+};

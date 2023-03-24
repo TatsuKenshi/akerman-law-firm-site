@@ -8,6 +8,7 @@ import justiceSmall from "../assets/justiceSmall.jpg";
 
 const PageHero = React.lazy(() => import("../components/PageHero"));
 const RevealCard = React.lazy(() => import("../components/RevealCard"));
+const DropDownMenu = React.lazy(() => import("../components/DropDownMenu"));
 
 const Services = ({ t }: any) => {
   const {
@@ -54,8 +55,11 @@ in a wide range of legal areas."
         <div className="h-[4px] w-11/12 max-w-[270px] bg-yellow-700 bg-opacity-70 mx-auto mt-2"></div>
       </div>
 
+      {/* Dropdown menu section */}
+      <DropDownMenu />
+
       {/* reveal card section */}
-      <section>
+      {/* <section>
         <div className="flex h-max max-w-[1200px] mx-auto justify-center lg:justify-evenly flex-wrap mt-4 px-4 pt-4">
           <RevealCard
             titleSr="KOMPANIJSKO PRAVO"
@@ -118,7 +122,7 @@ in a wide range of legal areas."
             placeholderImg={justiceSmall}
           />
         </div>
-      </section>
+      </section> */}
     </main>
   );
 };
