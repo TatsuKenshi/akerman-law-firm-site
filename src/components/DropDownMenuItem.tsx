@@ -44,6 +44,7 @@ const DropDownMenuItem = ({
       {show && (
         <div className="mt-4">{language === "en" ? TextEng : TextSr}</div>
       )}
+      <div className="h-[1px] bg-slate-900 mt-2"></div>
     </div>
   );
 };

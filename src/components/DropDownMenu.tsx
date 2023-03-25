@@ -25,7 +25,7 @@ const DropDownMenu = () => {
 
   return (
     <section>
-      <div className="h-max max-w-[1200px] mx-auto justify-center lg:justify-evenly mt-4 px-4 pt-4 mb-8">
+      <div className="h-max max-w-[1200px] mx-auto justify-center lg:justify-evenly mt-4 px-4 pt-4 mb-16">
         <DropDownMenuItem
           titleSr="KOMPANIJSKO PRAVO"
           titleEng="COMPANY LAW"
