@@ -52,7 +52,7 @@ const Services = ({ t }: any) => {
       <DropDownMenu />
 
       {/* reveal card section */}
-      {/* <section>
+      <section>
         <div className="flex h-max max-w-[1200px] mx-auto justify-center lg:justify-evenly flex-wrap mt-4 px-4 pt-4">
           <RevealCard
             titleSr="KOMPANIJSKO PRAVO"
@@ -115,7 +115,7 @@ const Services = ({ t }: any) => {
             placeholderImg={justiceSmall}
           />
         </div>
-      </section> */}
+      </section>
     </main>
   );
 };
