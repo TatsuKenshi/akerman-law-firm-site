@@ -3,7 +3,7 @@ import { withTranslation } from "react-i18next";
 import usePageTitle from "../hooks/usePageTitle";
 import i18n from "../translation";
 
-const PageHero = React.lazy(() => import("../components/PageHero"));
+const HomeHero = React.lazy(() => import("../components/HomeHero"));
 const About = React.lazy(() => import("../components/About"));
 
 const Home = ({ t }: any) => {
@@ -17,7 +17,7 @@ const Home = ({ t }: any) => {
 
   return (
     <main className="overflow-hidden">
-      <PageHero
+      <HomeHero
         srTitle="Početna"
         srContent="Advokatska kancelarija Akerman Vam pruža punu pravnu i administrativnu podršku u vezi svih pravnih i
 regulatornih stvari. Naše usluge obuhvataju pravno savetovanje u različitim oblastima prava."
