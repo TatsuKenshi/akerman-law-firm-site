@@ -1,6 +1,8 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import PageHero from "../components/PageHero";
+
+const HomeHero = React.lazy(() => import("../components/HomeHero"));
+const PageHero = React.lazy(() => import("../components/PageHero"));
 
 const Error = ({ t }: any) => {
   const navigate = useNavigate();
@@ -13,6 +15,7 @@ const Error = ({ t }: any) => {
   return (
     <main>
       <PageHero srTitle="" srContent="" engTitle="" engContent="" />
+      {/* <HomeHero srTitle="" srContent="" engTitle="" engContent="" /> */}
 
       {/* error and redirection message section */}
       <div className="mt-8 text-center mx-4">

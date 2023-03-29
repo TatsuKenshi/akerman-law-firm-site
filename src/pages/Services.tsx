@@ -9,6 +9,7 @@ import justiceSmall from "../assets/justiceSmall.jpg";
 const PageHero = React.lazy(() => import("../components/PageHero"));
 const RevealCard = React.lazy(() => import("../components/RevealCard"));
 const DropDownMenu = React.lazy(() => import("../components/DropDownMenu"));
+const HomeHero = React.lazy(() => import("../components/HomeHero"));
 
 const Services = ({ t }: any) => {
   const {
@@ -39,6 +40,7 @@ const Services = ({ t }: any) => {
   return (
     <main>
       <PageHero srTitle="" srContent="" engTitle="" engContent="" />
+      {/* <HomeHero srTitle="" srContent="" engTitle="" engContent="" /> */}
 
       {/* title div */}
       <div className="mt-8 text-center mx-4">
