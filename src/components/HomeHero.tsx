@@ -1,8 +1,8 @@
 import i18next from "i18next";
-import banner1 from "../assets/banner1.jpg";
 import { HomeHeroPropsTypes } from "./types";
 import ProgressiveImage from "react-progressive-graceful-image";
-import placeholderSrc from "../assets/banner1Small.jpg";
+import banner1 from "../assets/naslovna.jpg";
+import placeholderSrc from "../assets/naslovnaSmall.jpg";
 
 const HomeHero = (props: HomeHeroPropsTypes) => {
   const language = i18next.language;
