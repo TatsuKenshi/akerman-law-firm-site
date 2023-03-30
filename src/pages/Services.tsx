@@ -3,8 +3,14 @@ import { withTranslation } from "react-i18next";
 import useText from "../hooks/useText";
 import usePageTitle from "../hooks/usePageTitle";
 import i18n from "../translation";
-import justice from "../assets/justice.jpg";
-import justiceSmall from "../assets/justiceSmall.jpg";
+import Administrative from "../assets/Administrative.jpg";
+import Company from "../assets/Company.jpg";
+import Enforcement1 from "../assets/Enforcement1.jpg";
+import Enforcement3 from "../assets/Enforcement3.jpg";
+import FamilyAndInheritance1 from "../assets/FamilyAndInheritance1.jpg";
+import Labour1 from "../assets/Labour1.jpg";
+import Property1 from "../assets/Property1.jpg";
+import RepresentingClients from "../assets/RepresentingClients.jpg";
 
 const PageHero = React.lazy(() => import("../components/PageHero"));
 const RevealCard = React.lazy(() => import("../components/RevealCard"));
@@ -61,24 +67,24 @@ const Services = ({ t }: any) => {
             titleEng="COMPANY LAW"
             TextSr={<TextSr1 />}
             TextEng={<TextEng1 />}
-            mainImg={justice}
-            placeholderImg={justiceSmall}
+            mainImg={Company}
+            placeholderImg={Company}
           />
           <RevealCard
             titleSr="IZVRŠENJE"
             titleEng="ENFORCEMENT"
             TextSr={<TextSr2 />}
             TextEng={<TextEng2 />}
-            mainImg={justice}
-            placeholderImg={justiceSmall}
+            mainImg={Enforcement1}
+            placeholderImg={Enforcement1}
           />
           <RevealCard
             titleSr="NEPOKRETNOSTI"
             titleEng="PROPERTY LAW"
             TextSr={<TextSr3 />}
             TextEng={<TextEng3 />}
-            mainImg={justice}
-            placeholderImg={justiceSmall}
+            mainImg={Property1}
+            placeholderImg={Property1}
           />
         </div>
         <div className="flex h-max max-w-[1200px] mx-auto justify-evenly flex-wrap px-4">
@@ -87,24 +93,24 @@ const Services = ({ t }: any) => {
             titleEng="LABOUR LAW"
             TextSr={<TextSr4 />}
             TextEng={<TextEng4 />}
-            mainImg={justice}
-            placeholderImg={justiceSmall}
+            mainImg={Labour1}
+            placeholderImg={Labour1}
           />
           <RevealCard
             titleSr="ZASTUPANJE KLIJENATA PRED SUDOVIMA I DRUGIM DRŽAVNIM ORGANIMA"
             titleEng="REPRESENTING CLIENTS BEFORE THE COURTS AND OTHER STATE BODIES"
             TextSr={<TextSr5 />}
             TextEng={<TextEng5 />}
-            mainImg={justice}
-            placeholderImg={justiceSmall}
+            mainImg={RepresentingClients}
+            placeholderImg={RepresentingClients}
           />
           <RevealCard
             titleSr="NASLEDNO I PORODIČNO PRAVO"
             titleEng="FAMILY AND INHERITANCE LAW"
             TextSr={<TextSr6 />}
             TextEng={<TextEng6 />}
-            mainImg={justice}
-            placeholderImg={justiceSmall}
+            mainImg={FamilyAndInheritance1}
+            placeholderImg={FamilyAndInheritance1}
           />
         </div>
         <div className="flex h-max max-w-[1200px] mx-auto justify-evenly flex-wrap px-4">
@@ -113,8 +119,8 @@ const Services = ({ t }: any) => {
             titleEng="ADMINISTRATION LAW"
             TextSr={<TextSr7 />}
             TextEng={<TextEng7 />}
-            mainImg={justice}
-            placeholderImg={justiceSmall}
+            mainImg={Administrative}
+            placeholderImg={Administrative}
           />
         </div>
       </section>

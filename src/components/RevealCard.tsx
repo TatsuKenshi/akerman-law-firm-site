@@ -34,7 +34,7 @@ const RevealCard = ({
               alt="justice"
               className={`image${
                 loading ? " loading" : " loaded"
-              } w-full grayscale group-hover:grayscale-0`}
+              } w-full h-[200px] sm:h-[250px] md:h-[300px] lg:h-[200px] grayscale group-hover:grayscale-0`}
             />
           )}
         </ProgressiveImage>
