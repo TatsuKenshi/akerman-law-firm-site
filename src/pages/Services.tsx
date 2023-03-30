@@ -4,13 +4,21 @@ import useText from "../hooks/useText";
 import usePageTitle from "../hooks/usePageTitle";
 import i18n from "../translation";
 import Administrative from "../assets/Administrative.jpg";
+import AdministrativeSmall from "../assets/AdministrativeSmall.jpg";
 import Company from "../assets/Company.jpg";
+import CompanySmall from "../assets/CompanySmall.jpg";
 import Enforcement1 from "../assets/Enforcement1.jpg";
+import Enforcement1Small from "../assets/Enforcement1Small.jpg";
 import Enforcement3 from "../assets/Enforcement3.jpg";
+import Enforcement3Small from "../assets/Enforcement3Small.jpg";
 import FamilyAndInheritance1 from "../assets/FamilyAndInheritance1.jpg";
+import FamilyAndInheritance1Small from "../assets/FamilyAndInheritance1Small.jpg";
 import Labour1 from "../assets/Labour1.jpg";
+import Labour1Small from "../assets/Labour1Small.jpg";
 import Property1 from "../assets/Property1.jpg";
+import Property1Small from "../assets/Property1Small.jpg";
 import RepresentingClients from "../assets/RepresentingClients.jpg";
+import RepresentingClientsSmall from "../assets/RepresentingClientsSmall.jpg";
 
 const PageHero = React.lazy(() => import("../components/PageHero"));
 const RevealCard = React.lazy(() => import("../components/RevealCard"));
@@ -68,7 +76,7 @@ const Services = ({ t }: any) => {
             TextSr={<TextSr1 />}
             TextEng={<TextEng1 />}
             mainImg={Company}
-            placeholderImg={Company}
+            placeholderImg={CompanySmall}
           />
           <RevealCard
             titleSr="IZVRŠENJE"
@@ -76,7 +84,7 @@ const Services = ({ t }: any) => {
             TextSr={<TextSr2 />}
             TextEng={<TextEng2 />}
             mainImg={Enforcement1}
-            placeholderImg={Enforcement1}
+            placeholderImg={Enforcement1Small}
           />
           <RevealCard
             titleSr="NEPOKRETNOSTI"
@@ -84,7 +92,7 @@ const Services = ({ t }: any) => {
             TextSr={<TextSr3 />}
             TextEng={<TextEng3 />}
             mainImg={Property1}
-            placeholderImg={Property1}
+            placeholderImg={Property1Small}
           />
         </div>
         <div className="flex h-max max-w-[1200px] mx-auto justify-evenly flex-wrap px-4">
@@ -94,7 +102,7 @@ const Services = ({ t }: any) => {
             TextSr={<TextSr4 />}
             TextEng={<TextEng4 />}
             mainImg={Labour1}
-            placeholderImg={Labour1}
+            placeholderImg={Labour1Small}
           />
           <RevealCard
             titleSr="ZASTUPANJE KLIJENATA PRED SUDOVIMA I DRUGIM DRŽAVNIM ORGANIMA"
@@ -102,7 +110,7 @@ const Services = ({ t }: any) => {
             TextSr={<TextSr5 />}
             TextEng={<TextEng5 />}
             mainImg={RepresentingClients}
-            placeholderImg={RepresentingClients}
+            placeholderImg={RepresentingClientsSmall}
           />
           <RevealCard
             titleSr="NASLEDNO I PORODIČNO PRAVO"
@@ -110,7 +118,7 @@ const Services = ({ t }: any) => {
             TextSr={<TextSr6 />}
             TextEng={<TextEng6 />}
             mainImg={FamilyAndInheritance1}
-            placeholderImg={FamilyAndInheritance1}
+            placeholderImg={FamilyAndInheritance1Small}
           />
         </div>
         <div className="flex h-max max-w-[1200px] mx-auto justify-evenly flex-wrap px-4">
@@ -120,7 +128,7 @@ const Services = ({ t }: any) => {
             TextSr={<TextSr7 />}
             TextEng={<TextEng7 />}
             mainImg={Administrative}
-            placeholderImg={Administrative}
+            placeholderImg={AdministrativeSmall}
           />
         </div>
       </section>
