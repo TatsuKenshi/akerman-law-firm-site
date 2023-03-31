@@ -5,7 +5,6 @@ import i18n from "../translation";
 
 const PageHero = React.lazy(() => import("../components/PageHero"));
 const ContactForm = React.lazy(() => import("../components/ContactForm"));
-const HomeHero = React.lazy(() => import("../components/HomeHero"));
 
 const Contact = ({ t }: any) => {
   // page title customization and localization
@@ -19,7 +18,6 @@ const Contact = ({ t }: any) => {
   return (
     <main>
       <PageHero srTitle="" srContent="" engTitle="" engContent="" />
-      {/* <HomeHero srTitle="" srContent="" engTitle="" engContent="" /> */}
 
       {/* title div */}
       <div className="mt-8 text-center mx-4">
