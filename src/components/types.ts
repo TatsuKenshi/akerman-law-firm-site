@@ -1,10 +1,3 @@
-export type PageHeroPropsTypes = {
-  srTitle: string;
-  engTitle: string;
-  srContent: string;
-  engContent: string;
-};
-
 export type HomeHeroPropsTypes = {
   srTitle: string;
   engTitle: string;

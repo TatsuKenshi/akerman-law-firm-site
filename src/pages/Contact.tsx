@@ -17,7 +17,7 @@ const Contact = ({ t }: any) => {
 
   return (
     <main>
-      <PageHero srTitle="" srContent="" engTitle="" engContent="" />
+      <PageHero />
 
       {/* title div */}
       <div className="mt-8 text-center mx-4">

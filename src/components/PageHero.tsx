@@ -1,9 +1,8 @@
-import { PageHeroPropsTypes } from "./types";
 import ProgressiveImage from "react-progressive-graceful-image";
 import banner1 from "../assets/naslovna.jpg";
 import placeholderSrc from "../assets/naslovnaSmall.jpg";
 
-const PageHero = (props: PageHeroPropsTypes) => {
+const PageHero = () => {
   return (
     <div className="h-96 lg:h-[450px] mt-8 overflow-hidden">
       <ProgressiveImage src={banner1} placeholder={placeholderSrc}>
