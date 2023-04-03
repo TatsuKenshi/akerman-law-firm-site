@@ -1,7 +1,7 @@
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { withTranslation } from "react-i18next";
 import i18next from "i18next";
-import { FaTimes, FaLinkedin } from "react-icons/fa";
+import { FaTimes } from "react-icons/fa";
 import eng from "../assets/eng.png";
 import ser2 from "../assets/ser2.png";
 import { useSidebarContext } from "../context/SidebarContext";
@@ -143,17 +143,6 @@ const Sidebar = ({ t }: any) => {
           </button>
         </div>
       </section>
-
-      {/* social links and contacts section */}
-      <div className="flex justify-center mt-12">
-        <span className="flex">
-          <span>
-            <Link to="https://www.linkedin.com">
-              <FaLinkedin className="w-8 h-8" />
-            </Link>
-          </span>
-        </span>
-      </div>
     </aside>
   );
 };

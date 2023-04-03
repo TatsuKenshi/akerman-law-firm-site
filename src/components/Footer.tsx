@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { FaLinkedin } from "react-icons/fa";
 import { withTranslation } from "react-i18next";
 
 const Footer = ({ t }: any) => {
@@ -34,17 +33,8 @@ const Footer = ({ t }: any) => {
             {t("FooterContactEmail")}
             <br />
             {t("FooterContactEmailDisplay")}
-          </p>
-          <p>
-            {t("FooterContactSocial")}
-            <br />{" "}
-            <span className="flex">
-              <span className="mr-8">
-                <Link to="https://www.linkedin.com">
-                  <FaLinkedin />
-                </Link>
-              </span>
-            </span>
+            <br />
+            {t("FooterContactEmailDisplay2")}
           </p>
         </div>
 

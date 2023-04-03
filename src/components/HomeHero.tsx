@@ -1,20 +1,14 @@
-import i18next from "i18next";
-import { HomeHeroPropsTypes } from "./types";
+import { withTranslation } from "react-i18next";
 import ProgressiveImage from "react-progressive-graceful-image";
-import banner1 from "../assets/naslovna.jpg";
+import banner1 from "../assets/naslovna1920.jpg";
 import placeholderSrc from "../assets/naslovnaSmall.jpg";
 
-const HomeHero = (props: HomeHeroPropsTypes) => {
-  const language = i18next.language;
-
+const HomeHero = ({ t }: any) => {
   return (
     <div className="relative h-96 lg:h-[450px] mt-8 overflow-hidden bg-sky-900 bg-opacity-50">
       <div className="absolute z-30 flex w-full h-full">
         <div className="relative z-30 w-4/6 md:w-3/6 lg:w-2/6 px-6 py-4 text-white md:w-1/2">
-          <h2 className="text-lg md:text-xl lg:text-2xl mb-4 font-bold">
-            {language === "en" ? props.engTitle : props.srTitle}
-          </h2>
-          <p>{language === "en" ? props.engContent : props.srContent}</p>
+          <p>{t("HomeHeroText")}</p>
           <span></span>
         </div>
         <div className="absolute top-0 right-0 flex w-full h-full">
@@ -54,4 +48,4 @@ const HomeHero = (props: HomeHeroPropsTypes) => {
   );
 };
 
-export default HomeHero;
+export default withTranslation()(HomeHero);
