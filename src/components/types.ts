@@ -1,10 +1,3 @@
-export type HomeHeroPropsTypes = {
-  srTitle: string;
-  engTitle: string;
-  srContent: string;
-  engContent: string;
-};
-
 export type RevealCardPropsTypes = {
   titleSr: string;
   titleEng: string;
