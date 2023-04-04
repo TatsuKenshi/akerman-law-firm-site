@@ -1,14 +1,14 @@
 import { withTranslation } from "react-i18next";
 import ProgressiveImage from "react-progressive-graceful-image";
-import banner1 from "../assets/naslovna1920.jpg";
-import placeholderSrc from "../assets/naslovnaSmall.jpg";
+import banner2 from "../assets/naslovna2.jpg";
+import placeholderSrc from "../assets/naslovna2Small.jpg";
 
 const HomeHero = ({ t }: any) => {
   return (
     <div className="relative h-96 lg:h-[450px] mt-8 overflow-hidden bg-sky-900 bg-opacity-50">
       <div className="absolute z-30 flex w-full h-full">
-        <div className="relative z-30 w-4/6 md:w-3/6 lg:w-2/6 px-6 py-4 text-white md:w-1/2">
-          <p>{t("HomeHeroText")}</p>
+        <div className="relative z-30 w-4/6 md:w-3/6 lg:w-2/6 px-6 flex items-center md:w-1/2">
+          <p className="font-bold text-yellow-700">{t("HomeHeroText")}</p>
           <span></span>
         </div>
         <div className="absolute top-0 right-0 flex w-full h-full">
@@ -32,7 +32,7 @@ const HomeHero = ({ t }: any) => {
         </div>
       </div>
       <div className="absolute top-0 right-0 block w-full h-full">
-        <ProgressiveImage src={banner1} placeholder={placeholderSrc}>
+        <ProgressiveImage src={banner2} placeholder={placeholderSrc}>
           {(src, loading) => (
             <img
               alt="Corporate Office"

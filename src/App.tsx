@@ -7,11 +7,6 @@ const Contact = React.lazy(() => import("./pages/Contact"));
 const Error = React.lazy(() => import("./pages/Error"));
 
 function App() {
-  // Home page - about section localization and content - waiting
-  // PageHero - banner content customization and localization - waiting
-  // PageHero - banner image - waiting
-  // RevealCard - different images for different areas of work (images passed as props)
-
   return (
     <Routes>
       <Route

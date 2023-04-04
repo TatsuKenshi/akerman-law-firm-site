@@ -1,11 +1,11 @@
 import ProgressiveImage from "react-progressive-graceful-image";
-import banner1 from "../assets/naslovna.jpg";
-import placeholderSrc from "../assets/naslovnaSmall.jpg";
+import banner2 from "../assets/naslovna2.jpg";
+import placeholderSrc from "../assets/naslovna2Small.jpg";
 
 const PageHero = () => {
   return (
     <div className="h-96 lg:h-[450px] mt-8 overflow-hidden">
-      <ProgressiveImage src={banner1} placeholder={placeholderSrc}>
+      <ProgressiveImage src={banner2} placeholder={placeholderSrc}>
         {(src, loading) => (
           <img
             alt="Corporate Office"

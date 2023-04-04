@@ -110,7 +110,7 @@ const ContactForm = () => {
               htmlFor="user_email"
               className="text-xl font-bold text-sky-900"
             >
-              {language === "en" ? "Your email address" : "Vaša imejl adresa"}
+              {language === "en" ? "Your email address" : "Vaša email adresa"}
             </label>
           </div>
           <div>
