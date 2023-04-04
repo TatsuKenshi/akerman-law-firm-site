@@ -4,7 +4,7 @@ import placeholderSrc from "../assets/naslovna2Small.jpg";
 
 const PageHero = () => {
   return (
-    <div className="h-96 lg:h-[450px] mt-8 overflow-hidden">
+    <div className="h-[400px] lg:h-[500px] mt-8 overflow-hidden">
       <ProgressiveImage src={banner2} placeholder={placeholderSrc}>
         {(src, loading) => (
           <img
