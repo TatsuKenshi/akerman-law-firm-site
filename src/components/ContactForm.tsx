@@ -110,7 +110,7 @@ const ContactForm = () => {
               htmlFor="user_email"
               className="text-xl font-bold text-sky-900"
             >
-              {language === "en" ? "Your email address" : "Vaša email adresa"}
+              {language === "en" ? "Your email" : "Vaš email"}
             </label>
           </div>
           <div>
@@ -120,15 +120,15 @@ const ContactForm = () => {
               {...register("user_email", {
                 required: `${
                   language === "en"
-                    ? "Email address is required."
-                    : "Imejl adresa je obavezno polje."
+                    ? "Email is required."
+                    : "Email je obavezno polje."
                 }`,
                 pattern: {
                   value: /\S+@\S+\.\S+/,
                   message: `${
                     language === "en"
                       ? "Entered value does not match the email format."
-                      : "Unesena vrednost nije u validnom imejl formatu."
+                      : "Unesena vrednost nije u validnom email formatu."
                   }`,
                 },
               })}
