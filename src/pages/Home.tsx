@@ -4,6 +4,7 @@ import usePageTitle from "../hooks/usePageTitle";
 import i18n from "../translation";
 
 const HomeHero = React.lazy(() => import("../components/HomeHero"));
+const PageHero = React.lazy(() => import("../components/PageHero"));
 const About = React.lazy(() => import("../components/About"));
 
 const Home = ({ t }: any) => {
@@ -17,7 +18,8 @@ const Home = ({ t }: any) => {
 
   return (
     <main className="overflow-hidden">
-      <HomeHero />
+      {/* <HomeHero /> */}
+      <PageHero />
 
       {/* title div */}
       <div className="mt-8 text-center mx-4">

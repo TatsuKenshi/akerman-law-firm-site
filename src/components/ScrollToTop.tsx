@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { FaChevronUp, FaPhone, FaEnvelope } from "react-icons/fa";
+import { FaChevronUp, FaPhone } from "react-icons/fa";
 
 const ScrollToTop = () => {
   const [scrollToTopButton, setScrollToTopButton] =
@@ -27,17 +27,9 @@ const ScrollToTop = () => {
   return (
     <section className="fixed bottom-4 right-2 md:right-4 lg:right-8 z-[50]">
       <div className="mb-2">
-        <a href="tel:+38162255399">
+        <a href="tel:+38166426624">
           <button className="p-2 rounded-full bg-white border-4 border-sky-900">
             <FaPhone className="w-8 h-8 fill-sky-900" />
-          </button>
-        </a>
-      </div>
-
-      <div className="mb-2">
-        <a href="mailto:rockinbg@gmail.com">
-          <button className="p-2 rounded-full bg-white border-4 border-sky-900">
-            <FaEnvelope className="w-8 h-8 fill-sky-900" />
           </button>
         </a>
       </div>
