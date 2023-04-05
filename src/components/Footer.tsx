@@ -27,7 +27,7 @@ const Footer = ({ t }: any) => {
           <div className="h-[4px] w-full md:w-11/12 max-w-[1200px] bg-yellow-700 bg-opacity-70 my-2"></div>
           <p>
             {t("FooterContactPhone")} <br />
-            {t("FooterContactPhoneDisplay")}
+            +381 66 426 624
           </p>
           <p>
             {t("FooterContactEmail")}
