@@ -30,9 +30,11 @@ const ContactForm = () => {
     emailjs
       .sendForm(
         // "YOUR_SERVICE_ID"
-        "service_umggq1l",
+        // "service_umggq1l",
+        "service_46ondzq",
         // "YOUR_TEMPLATE_ID"
-        "template_cf12iib",
+        // "template_cf12iib",
+        "template_4ue54e4",
         form.current,
         // "YOUR_PUBLIC_KEY"
         "bUQ3y_ETcXqGMoY73"
