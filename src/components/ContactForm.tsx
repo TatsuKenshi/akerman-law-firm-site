@@ -55,7 +55,7 @@ const ContactForm = () => {
             ${
               language === "en"
                 ? "Your message has been sent. You will be redirected to the home page shortly."
-                : "Vaša poruka je poslata. Ubrzo ćete biti prebačeni na naslovnu stranu."
+                : "Vaša poruka je poslata. Ubrzo ćete biti prebačeni na početnu stranu."
             }
           `);
 
