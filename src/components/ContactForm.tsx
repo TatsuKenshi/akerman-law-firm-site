@@ -29,15 +29,10 @@ const ContactForm = () => {
 
     emailjs
       .sendForm(
-        // "YOUR_SERVICE_ID"
-        // "service_umggq1l",
-        "service_46ondzq",
-        // "YOUR_TEMPLATE_ID"
-        // "template_cf12iib",
-        "template_4ue54e4",
+        "service_0pz8z3p",
+        "template_bb151n5",
         form.current,
-        // "YOUR_PUBLIC_KEY"
-        "bUQ3y_ETcXqGMoY73"
+        "eyHIm5hfwMxwfRr_k"
       )
       .then(
         (result) => {
