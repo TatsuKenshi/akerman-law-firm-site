@@ -39,12 +39,12 @@ const useText = () => {
     return (
       <>
         <p className="w-full mb-4">
-          Our law firm can assist you in a phase of pre-incorporation and
-          incorporation of your company in Serbia as well as provide legal
-          support in all other regulatory matters related to the functioning of
-          the company in Serbia.
+          Our law firm can assist you in both pre-incorporation and
+          incorporation phases of your company in Serbia as well as provide
+          legal support in all other regulatory matters related to its
+          functioning in Serbia.
         </p>
-        <p className="w-full mb-2">Our service include:</p>
+        <p className="w-full mb-2">Our services include:</p>
         <ul className="list-disc">
           <li className="ml-6">
             Advising on and preparation of all necessary documents for the
@@ -59,17 +59,15 @@ const useText = () => {
             Drafting of documentation and legal advising concerning statutory
             changes, and increase/reduction of the capital
           </li>
-          <li className="ml-6">
-            Legal advising related to Corporate governance
-          </li>
+          <li className="ml-6">Legal advice related to Corporate governance</li>
           <li className="ml-6">
             Drafting of a memorandum of association, articles of association,
-            shareholders agreements, rules, procedures, decisions and other
+            shareholders agreements, rules, procedures, decisions, and other
             internal corporate documents
           </li>
           <li className="ml-6">
-            Preparation and legal advice concerning shareholders' assembly, a
-            board of directors, executive board and supervisory board meetings
+            Preparation and legal advice concerning shareholders' assembly,
+            board of directors, executive board, and supervisory board meetings
           </li>
         </ul>
       </>
@@ -97,7 +95,7 @@ const useText = () => {
     return (
       <>
         <p className="w-full mb-4">
-          Our Law Firm can provide you with legal support in any step of
+          Our Law Firm can provide you with legal support in all phases of
           enforcement procedure.
         </p>
         <p>
@@ -169,7 +167,7 @@ const useText = () => {
     return (
       <p>
         We represent individuals and legal entities in a wide range of legal
-        areas in disputes, out-of- court cases and administrative proceedings
+        areas in disputes, out-of-court cases and administrative proceedings
         before courts and other state authorities.
       </p>
     );
