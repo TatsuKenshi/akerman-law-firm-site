@@ -5,7 +5,6 @@ import i18n from "../translation";
 
 const PageHero = React.lazy(() => import("../components/PageHero"));
 const ContactForm = React.lazy(() => import("../components/ContactForm"));
-const Disclaimer = React.lazy(() => import("../components/Disclaimer"));
 
 const Contact = ({ t }: any) => {
   // page title customization and localization
@@ -27,7 +26,6 @@ const Contact = ({ t }: any) => {
       </div>
 
       {/* disclaimer section */}
-      <Disclaimer />
 
       {/* form section */}
       <ContactForm />
