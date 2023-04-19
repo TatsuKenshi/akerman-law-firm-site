@@ -5,7 +5,7 @@ const Home = React.lazy(() => import("./pages/Home"));
 const Services = React.lazy(() => import("./pages/Services"));
 const Contact = React.lazy(() => import("./pages/Contact"));
 const Error = React.lazy(() => import("./pages/Error"));
-const Privacy = React.lazy(() => import("./pages/Privacy"));
+const Terms = React.lazy(() => import("./pages/Terms"));
 
 function App() {
   return (
@@ -38,7 +38,7 @@ function App() {
         path="terms"
         element={
           <React.Suspense fallback={<>...</>}>
-            <Privacy />
+            <Terms />
           </React.Suspense>
         }
       />

@@ -6,7 +6,7 @@ import i18n from "../translation";
 const PageHero = React.lazy(() => import("../components/PageHero"));
 const Disclaimer = React.lazy(() => import("../components/Disclaimer"));
 
-const Privacy = ({ t }: any) => {
+const Terms = ({ t }: any) => {
   // page title customization and localization
   const { changeTitle } = usePageTitle();
   const language = i18n.language;
@@ -30,4 +30,4 @@ const Privacy = ({ t }: any) => {
   );
 };
 
-export default withTranslation()(Privacy);
+export default withTranslation()(Terms);
