@@ -25,7 +25,7 @@ const Navbar = ({ t }: any) => {
       {/* content main section */}
       <section className="hidden lg:flex text-white items-center h-full mx-auto">
         {/* logo div */}
-        <div className="w-16 mr-72 text-center">
+        <div className="w-16 ml-4 mr-56 text-center">
           <NavLink to="/">
             <span className="text-3xl font-bold">
               <img
@@ -89,10 +89,27 @@ const Navbar = ({ t }: any) => {
             </div>
             <div className="h-[2px] w-full bg-transparent group-hover:bg-yellow-700"></div>
           </div>
+
+          <div className="w-48 group flex-col place-content-between text-center">
+            <div className="h-[2px] w-full bg-transparent group-hover:bg-yellow-700"></div>
+            <div className="w-full py-2 px-auto">
+              <NavLink
+                to="/terms"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-yellow-700 font-bold hover:text-yellow-700"
+                    : ""
+                }
+              >
+                <span className="text-xl font-bold">{t("Terms")}</span>
+              </NavLink>
+            </div>
+            <div className="h-[2px] w-full bg-transparent group-hover:bg-yellow-700"></div>
+          </div>
         </section>
 
         {/* language buttons section */}
-        <section className="flex ml-12 h-full items-center">
+        <section className="flex ml-6 h-full items-center">
           <div className="w-6 mr-4">
             <button
               onClick={() => handleChange("en")}

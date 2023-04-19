@@ -111,6 +111,22 @@ const Sidebar = ({ t }: any) => {
             <span className="text-xl font-bold">{t("Contact")}</span>
           </NavLink>
         </div>
+
+        <div className="w-full py-2 px-auto mt-8 mb-12">
+          <NavLink
+            to="/terms"
+            className={({ isActive }) =>
+              isActive ? "text-yellow-700 font-bold hover:text-yellow-700" : ""
+            }
+            onClick={() => {
+              setSidebarStatus("hidden");
+              setRotateSidebarButton("animate-[spin_0.4s_1]");
+              setRotateMenuButton("");
+            }}
+          >
+            <span className="text-xl font-bold">{t("Terms")}</span>
+          </NavLink>
+        </div>
       </section>
 
       {/* language buttons section */}

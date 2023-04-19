@@ -5,6 +5,7 @@ const Home = React.lazy(() => import("./pages/Home"));
 const Services = React.lazy(() => import("./pages/Services"));
 const Contact = React.lazy(() => import("./pages/Contact"));
 const Error = React.lazy(() => import("./pages/Error"));
+const Privacy = React.lazy(() => import("./pages/Privacy"));
 
 function App() {
   return (
@@ -30,6 +31,14 @@ function App() {
         element={
           <React.Suspense fallback={<>...</>}>
             <Contact />
+          </React.Suspense>
+        }
+      />
+      <Route
+        path="terms"
+        element={
+          <React.Suspense fallback={<>...</>}>
+            <Privacy />
           </React.Suspense>
         }
       />
