@@ -7,8 +7,6 @@ const Contact = React.lazy(() => import("./pages/Contact"));
 const Error = React.lazy(() => import("./pages/Error"));
 const Terms = React.lazy(() => import("./pages/Terms"));
 
-// Sakerman SaraSara0101!
-
 function App() {
   return (
     <Routes>
