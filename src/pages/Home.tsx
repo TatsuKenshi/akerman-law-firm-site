@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { withTranslation } from "react-i18next";
+import CookieConsent from "react-cookie-consent";
 import usePageTitle from "../hooks/usePageTitle";
 import i18n from "../translation";
 
@@ -26,6 +27,23 @@ const Home = ({ t }: any) => {
       </div>
 
       <About />
+
+      <CookieConsent
+        debug={true}
+        location="bottom"
+        style={{ background: "black", textAlign: "center" }}
+        buttonStyle={{
+          color: "black",
+          background: "green",
+          borderRadius: "20px",
+          fontSize: "1rem",
+        }}
+        buttonText="Alright!"
+        expires={1}
+      >
+        This Site Uses Cookies. Check out our{" "}
+        <a href="/terms">privacy policy</a> for more info.
+      </CookieConsent>
     </main>
   );
 };
