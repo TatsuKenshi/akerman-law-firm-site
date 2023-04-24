@@ -29,20 +29,36 @@ const Home = ({ t }: any) => {
       <About />
 
       <CookieConsent
-        debug={true}
         location="bottom"
-        style={{ background: "black", textAlign: "center" }}
-        buttonStyle={{
-          color: "black",
-          background: "green",
-          borderRadius: "20px",
-          fontSize: "1rem",
+        style={{
+          background: "#082f49",
         }}
-        buttonText="Alright!"
+        buttonStyle={{
+          background: " white",
+          color: "#0c4a6e",
+          fontSize: "1rem",
+          borderRadius: "20px",
+        }}
+        buttonText={language === "sr" ? "U redu" : "I agree"}
         expires={1}
       >
-        This Site Uses Cookies. Check out our{" "}
-        <a href="/terms">privacy policy</a> for more info.
+        {language === "sr" ? (
+          <p>
+            Ovaj sajt koristi kolačiće. Za više informacija, pogledajte naše{" "}
+            <a href="/terms" className="underline font-bold">
+              uslove korišćenja
+            </a>
+            .
+          </p>
+        ) : (
+          <p>
+            This site uses cookies. For more info, see our{" "}
+            <a href="/terms" className="underline font-bold">
+              terms of use
+            </a>
+            .
+          </p>
+        )}
       </CookieConsent>
     </main>
   );
