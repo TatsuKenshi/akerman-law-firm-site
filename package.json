@@ -1,5 +1,6 @@
 {
   "name": "akerman-law-firm-site",
+  "homepage": "https://akerman.rs",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
