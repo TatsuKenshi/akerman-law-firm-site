@@ -3,7 +3,7 @@ const useText = () => {
     return (
       <>
         <p className="w-full mb-4">
-          Mi Brinemo o usaglašenosti Vašeg poslovanja sa relevantnom pravnom
+          Mi brinemo o usaglašenosti Vašeg poslovanja sa relevantnom pravnom
           regulativom, kako bi Vaše društvo nesmetano funkcionisalo na tržištu
           Republike Srbije.
         </p>
