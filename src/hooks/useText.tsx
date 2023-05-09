@@ -112,7 +112,7 @@ const useText = () => {
     return (
       <p>
         Pružamo pouzdanu podršku klijentima u oblasti imovinsko-pravnih odnosa.
-        Vršimo detaljnu proveru i analizu pravnog statusa nepokretnosti, i
+        Vršimo detaljnu proveru i analizu pravnog statusa nepokretnosti i
         upozoravamo na sve eventualne rizike. U skladu sa zahtevima klijenta
         proaktivno učestvujemo u pregovorima i pripremi svih akata neophodnih za
         realizaciju pravnog posla.
