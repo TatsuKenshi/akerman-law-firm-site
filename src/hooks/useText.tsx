@@ -9,26 +9,26 @@ const useText = () => {
         </p>
         <p className="w-full mb-2">Naše usluge uključuju:</p>
         <ul className="list-disc">
-          <li className="ml-6">Osnivanje privrednih društava</li>
+          <li className="ml-6">Osnivanje privrednih društava;</li>
           <li className="ml-6">
             Registraciju poslovnih podataka, promena i podnošenje ostalih
-            registracionih prijava u Agenciji za privredne registre
+            registracionih prijava u Agenciji za privredne registre;
           </li>
           <li className="ml-6">
             Pripremu neophodne dokumentacije i savetovanje prilikom statusnih
-            promena, povećanja i smanjenja kapitala društva
+            promena, povećanja i smanjenja kapitala društva;
           </li>
           <li className="ml-6">
-            Pravno savetovanje u vezi sa korporativnim upravljanjem
+            Pravno savetovanje u vezi sa korporativnim upravljanjem;
           </li>
           <li className="ml-6">
             Izradu osnivačkih akata, statuta, ugovora članova društva,
             pravilnika, internih procedura, odluka i drugih internih
-            kompanijskih akata
+            kompanijskih akata;
           </li>
           <li className="ml-6">
             Pripremu i savetovanje u vezi sa održavanjem skupština društva i
-            sednica upravnih, izvršnih i nadzornih odbora
+            sednica upravnih, izvršnih i nadzornih odbora.
           </li>
         </ul>
       </>
@@ -49,25 +49,27 @@ const useText = () => {
           <li className="ml-6">
             Advising on and preparation of all necessary documents for the
             establishment of the company, associations, foundations and other
-            legal entities
+            legal entities;
           </li>
           <li className="ml-6">
             Registrations and filings with Serbian Business Registers Agency and
-            other institutions
+            other institutions;
           </li>
           <li className="ml-6">
             Drafting of documentation and legal advising concerning statutory
-            changes, and increase/reduction of the capital
+            changes, and increase/reduction of the capital;
           </li>
-          <li className="ml-6">Legal advice related to Corporate governance</li>
+          <li className="ml-6">
+            Legal advice related to Corporate governance;
+          </li>
           <li className="ml-6">
             Drafting of a memorandum of association, articles of association,
             shareholders agreements, rules, procedures, decisions, and other
-            internal corporate documents
+            internal corporate documents;
           </li>
           <li className="ml-6">
             Preparation and legal advice concerning shareholders' assembly,
-            board of directors, executive board, and supervisory board meetings
+            board of directors, executive board, and supervisory board meetings.
           </li>
         </ul>
       </>
