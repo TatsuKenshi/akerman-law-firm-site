@@ -32,9 +32,13 @@ const Footer = ({ t }: any) => {
           <p>
             {t("FooterContactEmail")}
             <br />
-            {t("FooterContactEmailDisplay")}
+            <a href="mailto:office@akerman.rs" className="underline">
+              office@akerman.rs
+            </a>
             <br />
-            {t("FooterContactEmailDisplay2")}
+            <a href="mailto:adv@akerman.rs" className="underline">
+              adv@akerman.rs
+            </a>
           </p>
         </div>
 
