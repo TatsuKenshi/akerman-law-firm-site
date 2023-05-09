@@ -44,7 +44,7 @@ const Footer = ({ t }: any) => {
 
         {/* links section */}
         <div className="w-full md:w-1/2 lg:w-1/4 mb-12 md:mb-8">
-          <h4>Linkovi</h4>
+          <h4>{t("FooterLinks")}</h4>
           <div className="h-[4px] w-full md:w-11/12 max-w-[1200px] bg-yellow-700 bg-opacity-70 my-2"></div>
           <p>
             <Link to="/">{t("Home")}</Link>
