@@ -10,6 +10,7 @@ import Sidebar from "./components/Sidebar";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import SidebarProvider from "./context/SidebarContext";
+import ScrollReset from "./components/ScrollReset";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -19,11 +20,13 @@ root.render(
     <I18nextProvider i18n={i18n}>
       <SidebarProvider>
         <Router>
-          <Navbar />
-          <Sidebar />
-          <App />
-          <ScrollToTop />
-          <Footer />
+          <ScrollReset>
+            <Navbar />
+            <Sidebar />
+            <App />
+            <ScrollToTop />
+            <Footer />
+          </ScrollReset>
         </Router>
       </SidebarProvider>
     </I18nextProvider>
