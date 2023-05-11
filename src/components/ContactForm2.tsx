@@ -30,12 +30,12 @@ const ContactForm = () => {
     emailjs
       .sendForm(
         // Service ID
-        "service_3egksr6",
+        "service_umggq1l",
         // Template ID
-        "template_r9vccgt",
+        "template_cf12iib",
         form.current,
         // Public key
-        "V8zB59DCrXsYkcmjt"
+        "bUQ3y_ETcXqGMoY73"
       )
       .then(
         (result) => {
@@ -52,7 +52,7 @@ const ContactForm = () => {
       <form
         ref={form}
         onSubmit={(e) => {
-          // sendEmail(e);
+          sendEmail(e);
 
           setMessageSent(`
             ${
