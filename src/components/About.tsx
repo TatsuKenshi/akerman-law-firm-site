@@ -11,7 +11,14 @@ const About = ({ t }: any) => {
         <h3 className="text-2xl font-bold text-sky-900 mt-8 w-full">
           {t("AboutAreas")}
         </h3>
-        <p>{t("AboutAreasParagraph")}</p>
+        <p className="width-full">{t("AboutAreasParagraph")}</p>
+        <p>
+          {t("AboutAreasSite")}{" "}
+          <a href="http://akerman.rs" className="underline text-sky-900">
+            akerman.rs
+          </a>
+          .
+        </p>
       </div>
     </section>
   );
