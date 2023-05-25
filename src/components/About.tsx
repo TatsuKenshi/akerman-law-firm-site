@@ -12,13 +12,6 @@ const About = ({ t }: any) => {
           {t("AboutAreas")}
         </h3>
         <p className="width-full">{t("AboutAreasParagraph")}</p>
-        <p>
-          {t("AboutAreasSite")}{" "}
-          <a href="http://akerman.rs" className="underline text-sky-900">
-            akerman.rs
-          </a>
-          .
-        </p>
       </div>
     </section>
   );

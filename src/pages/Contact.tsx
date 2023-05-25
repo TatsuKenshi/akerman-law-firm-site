@@ -4,7 +4,7 @@ import usePageTitle from "../hooks/usePageTitle";
 import i18n from "../translation";
 
 const PageHero = React.lazy(() => import("../components/PageHero"));
-const ContactForm = React.lazy(() => import("../components/ContactForm2"));
+const ContactForm = React.lazy(() => import("../components/ContactForm"));
 
 const Contact = ({ t }: any) => {
   // page title customization and localization

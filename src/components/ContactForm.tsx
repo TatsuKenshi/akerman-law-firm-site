@@ -52,7 +52,7 @@ const ContactForm = () => {
       <form
         ref={form}
         onSubmit={(e) => {
-          // sendEmail(e);
+          sendEmail(e);
 
           setMessageSent(`
             ${
