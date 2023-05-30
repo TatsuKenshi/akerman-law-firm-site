@@ -22,7 +22,7 @@ const Error = ({ t }: any) => {
           Ova stranica ne postoji.
         </p>
         <p className="text-xl font-bold text-sky-900">
-          This page doesn't exist.
+          This page does not exist.
         </p>
         <p>Uskoro ćete biti prebačeni na Početnu stranicu.</p>
         <p className="mb-16">
