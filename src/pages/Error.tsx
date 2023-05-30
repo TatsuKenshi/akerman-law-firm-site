@@ -26,7 +26,7 @@ const Error = ({ t }: any) => {
         </p>
         <p>Uskoro ćete biti prebačeni na Početnu stranicu.</p>
         <p className="mb-16">
-          You will be redirected to the home page shortly.
+          You will be redirected to the Home page shortly.
         </p>
       </div>
     </main>
